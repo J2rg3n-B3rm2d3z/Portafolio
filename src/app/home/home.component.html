@@ -1,7 +1,15 @@
-<div class="container">
+<div class="container text-center">
+
+    <br>
+
+    <button (click)="DownloadFile()" class="btn btn-outline-dark mb-5 shadow border"> 
+        Descargar Currículum 
+    </button>
+
     <div class="row">
         <div class="col-lg shadow border m-1">
             <div class="text-center">
+                <br>
                 <h2>Acerca de mí</h2>
                 <img src="../../assets/default.jpg" alt="imagen de perfil" width="256" height="256" class="rounded-circle">
                 
@@ -14,10 +22,13 @@
         </div>
         <div class="col-lg shadow border m-1">
             <div class="text-center">
+                <br>
                 <h2>
-                    Proyectos destacados
+                    Proyecto destacado
                 </h2>
+                <br>
                 <h4> {{featuredProject.name}} </h4>
+                <br>
             </div>
 
             <carousel>
@@ -30,4 +41,6 @@
             <p> Visita la sección de portafolio para saber más.</p>
         </div>
     </div>
+    <br>
+    <br>
 </div>

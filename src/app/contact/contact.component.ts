@@ -10,6 +10,8 @@ import { Title } from '@angular/platform-browser';
 })
 export class ContactComponent {
 
+  email:string = 'jurgenfbermudezpicado@gmail.com'
+
   constructor(private tittleService: Title){
     this.tittleService.setTitle('Jurgen Bermúdez - Contactos');
 
