@@ -1,3 +1,18 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactComponent } from './contact/contact.component';
+import { EducationComponent } from './education/education.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TechnologyComponent } from './technology/technology.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {path: 'inicio', component:HomeComponent},
+    // {path: 'acerca-de-mi', component:AboutMeComponent},
+    {path: 'contactos', component:ContactComponent},
+    {path: 'educacion', component:EducationComponent},
+    {path: 'portafolio', component:PortfolioComponent},
+    {path: 'tecnologias', component:TechnologyComponent},
+    { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+    { path: '**', redirectTo: '/inicio', pathMatch: 'full' }
+];
