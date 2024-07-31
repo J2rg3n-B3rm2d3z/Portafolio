@@ -21,6 +21,9 @@ export class ProjectCardComponent {
   }
 
   OpenProjectModal(){
+
+    //Configuration for modal target.
+
     const modalOptions: ModalOptions = {
       class: "modal-lg",
       initialState: {
@@ -28,7 +31,7 @@ export class ProjectCardComponent {
       }
     };
 
-    this.bsModalRef =  this.modalService.show(ProjectModalComponent, modalOptions);
+    this.bsModalRef =  this.modalService.show(ProjectModalComponent, modalOptions); //Instance for modal target.
   }
 
 }

@@ -21,7 +21,6 @@ export class AppComponent {
   title = 'portafolio';
 
   ngOnInit(): void {
-    // AOS.init();
-    // window.addEventListener('load',AOS.refresh);
   }
+
 }

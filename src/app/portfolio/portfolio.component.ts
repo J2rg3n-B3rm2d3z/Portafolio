@@ -31,6 +31,7 @@ export class PortfolioComponent implements OnInit {
   nodejs: boolean = false;
   aspnet: boolean = false;
   react: boolean = false;
+
   filtering: boolean = false;
 
   constructor(private tittleService: Title, private projectService: ProjectsService) {
@@ -39,8 +40,15 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.projects = this.projectService.GetProjects();
+    this.projects = this.projectService.GetProjects(); //Get all the projects from services.
   }
+
+
+  /*
+    When select or change a tag throught the chechbox, it's call this function that call a function from service,
+    giving it as parameters, the array of Tags, and return the projects whith the tags that checkbox is true.
+    For each change this always array start empty, the Tags that is true push in the array of tags when execute the code.
+    */
 
   Filter() {
     let filterTags: Tag[] = [];
@@ -73,14 +81,17 @@ export class PortfolioComponent implements OnInit {
       filterTags.push(Tag.REACT)
     }
 
-    if(this.typescript || this.javascript || this.python || this.csharp || this.java || this.angular || this.nodejs || this.aspnet || this.react ){
+    if (this.typescript || this.javascript || this.python || this.csharp ||
+      this.java || this.angular || this.nodejs || this.aspnet || this.react) {
       this.filtering = true;
-    }else{
-      this.filtering = false;
+    } else {
+      this.filtering = false; //This variable is for show reset button.
     }
 
-    this.projects = this.projectService.GetProjectByFilter(filterTags);
+    this.projects = this.projectService.GetProjectByFilter(filterTags); //Get the list of projects.
   }
+
+  //Reset all.
 
   ResetFilters() {
     this.typescript = false;
@@ -93,7 +104,8 @@ export class PortfolioComponent implements OnInit {
     this.aspnet = false;
     this.react = false;
     this.filtering = false;
-
     this.projects = this.projectService.GetProjects();
   }
 }
+
+//Probably, optimize the code.

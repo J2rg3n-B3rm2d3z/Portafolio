@@ -16,6 +16,6 @@ export class ProjectModalComponent {
   project = {} as Project;
 
   constructor(public bsModalRef: BsModalRef){
-
   }
+  
 }

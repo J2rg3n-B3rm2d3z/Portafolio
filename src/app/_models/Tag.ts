@@ -1,3 +1,5 @@
+//This class is for tags of tecnology that use in projects.
+//If this change (add o delete tags) you shuold edit the portfolio component.
 export class Tag{
     static readonly ANGULAR = new Tag('Angular','red');
     static readonly TYPESCRIPT = new Tag('TypeScript','darkred');

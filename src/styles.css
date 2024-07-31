@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-
+/* You can add global styles to this file, and also import other style files.*/
 
 .container{
     max-width: 1140px;
@@ -16,9 +15,11 @@
     color: white;
 }
 
+/*Animation.*/
 
+/*Right Animation for the body.*/
 
-@keyframes enter {
+@keyframes enterR {
 	from {
 		opacity: 0;
 		transform: translateX(100%);
@@ -30,7 +31,7 @@
 	}
 }
 
-@keyframes exit {
+@keyframes exitR {
 	from {
 		opacity: 1;
 		transform: translateX(0);
@@ -42,15 +43,55 @@
 	}
 }
 
-::view-transition-old(serie-slide){
+::view-transition-old(slide-right){
     animation-duration: 1s;
-	animation-name: exit;
+	animation-name: exitR;
 }
 
-::view-transition-new(serie-slide){
+::view-transition-new(slide-right){
     animation-duration: 1s;
-	animation-name: enter;
+	animation-name: enterR;
 }
+
+/*Left Animation for the body.*/
+
+@keyframes enterL {
+	from {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes exitL {
+	from {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+    to {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+}
+
+::view-transition-old(slide-left){
+    animation-duration: 1s;
+	animation-name: exitL;
+}
+
+::view-transition-new(slide-left){
+    animation-duration: 1s;
+	animation-name: enterL;
+}
+
+
+/*Animation for the head.*/
+
 
 @keyframes enterP {
 	from {

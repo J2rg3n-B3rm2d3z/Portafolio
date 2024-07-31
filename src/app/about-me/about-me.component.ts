@@ -15,3 +15,4 @@ export class AboutMeComponent {
 
   }
 }
+//This componente should be deleted.

@@ -1,12 +1,12 @@
+/* Base gradient background for bubbles.  */
+
 .jumbotron{
     padding: 2rem 1rem;
     background: linear-gradient(to right, #9bb5ec, #6571ee);
-}
-
-.bg_animate{
-    background-color: linear-gradient(to right, #005c98, #505BDA);
     overflow: hidden;
 }
+
+/* Bubbles design. */
 
 .bubble{
     width: 80px;
@@ -18,7 +18,6 @@
     position: absolute;
     bottom: -150;
     left: 5%;
-    
 
     animation: bubbles 3s linear infinite ;
 }
@@ -106,6 +105,8 @@
     left: 85%;
     animation-duration: 12s;
 } 
+
+/* Animation bubbles. */
 
 @keyframes bubbles {
     0%{
