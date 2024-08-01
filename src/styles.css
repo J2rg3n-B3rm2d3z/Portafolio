@@ -1,4 +1,27 @@
 /* You can add global styles to this file, and also import other style files.*/
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(120, 170, 240,0.75) 3%, rgba(147, 120, 240,0.75) 38%, rgba(120, 131, 240,0.75) 68%, rgba(120, 208, 240,0.75) 98%, rgba(186, 120, 240,0.75) 100%);
+    animation: gradient 10s ease infinite;
+    background-size: 300% 300%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/**/
 
 .container{
     max-width: 1140px;

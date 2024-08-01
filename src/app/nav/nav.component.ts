@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { NavbarService } from '../_services/navbar.service';
 
 @Component({
   selector: 'app-nav',
@@ -9,5 +10,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
+
+  constructor(private navbarService: NavbarService){
+  }
+
+  optionSelected(option: string){ //Select the value from the nav that after use in app component.
+    this.navbarService.selectedOption.next(option);
+  }
 
 }

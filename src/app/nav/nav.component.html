@@ -1,19 +1,19 @@
-<nav class="navbar-expand-md border-bottom mb-3">
+<nav class="navbar-expand-md border-bottom mb-3" style="background-color: white;">
     <div class="container">
         <ul class="nav justify-content-center">
-            <li class="nav-item">
+            <li class="nav-item" (mouseover)="optionSelected('home')">
                 <a class="nav-link text-secondary" routerLink="/inicio" routerLinkActive="text-dark">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" (mouseover)="optionSelected('education')">
                 <a class="nav-link text-secondary" routerLink="/educacion" routerLinkActive="text-dark">Educación</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" (mouseover)="optionSelected('technology')">
                 <a class="nav-link text-secondary" routerLink="/tecnologias" routerLinkActive="text-dark">Tecnologías</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" (mouseover)="optionSelected('portfolio')">
                 <a class="nav-link text-secondary" routerLink="/portafolio" routerLinkActive="text-dark">Portafolio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" (mouseover)="optionSelected('contact')">
                 <a class="nav-link text-secondary" routerLink="/contactos" routerLinkActive="text-dark">Contactos</a>
             </li>
         </ul>
