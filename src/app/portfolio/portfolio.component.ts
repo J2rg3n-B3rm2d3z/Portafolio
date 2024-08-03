@@ -7,8 +7,6 @@ import { ProjectsService } from '../_services/projects.service';
 import { FormsModule } from '@angular/forms';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { Tag } from '../_models/Tag';
-import { filter } from 'rxjs';
-
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -27,10 +25,14 @@ export class PortfolioComponent implements OnInit {
   python: boolean = false;
   csharp: boolean = false;
   java: boolean = false;
+  kotlin: boolean = false;
   angular: boolean = false;
   nodejs: boolean = false;
   aspnet: boolean = false;
   react: boolean = false;
+  androidstudio: boolean = false;
+  turboc: boolean = false;
+  c: boolean = false;
 
   filtering: boolean = false;
 
@@ -80,9 +82,22 @@ export class PortfolioComponent implements OnInit {
     if (this.react) {
       filterTags.push(Tag.REACT)
     }
+    if(this.androidstudio){
+      filterTags.push(Tag.ANDROIDSTUDIO)
+    }
+    if(this.kotlin){
+      filterTags.push(Tag.KOTLIN)
+    }
+    if(this.turboc){
+      filterTags.push(Tag.TURBOC)
+    }
+    if(this.c){
+      filterTags.push(Tag.C)
+    }
 
     if (this.typescript || this.javascript || this.python || this.csharp ||
-      this.java || this.angular || this.nodejs || this.aspnet || this.react) {
+      this.java || this.angular || this.nodejs || this.aspnet || this.react ||
+      this.androidstudio || this.kotlin || this.c || this.turboc) {
       this.filtering = true;
     } else {
       this.filtering = false; //This variable is for show reset button.
@@ -103,7 +118,12 @@ export class PortfolioComponent implements OnInit {
     this.nodejs = false;
     this.aspnet = false;
     this.react = false;
+    this.kotlin = false;
     this.filtering = false;
+    this.androidstudio = false;
+    this.turboc = false;
+    this.c = false;
+
     this.projects = this.projectService.GetProjects();
   }
 }

@@ -2,7 +2,7 @@
 
     <br>
 
-    <button (click)="DownloadFile()" class="btn btn-light mb-5 shadow-sm border" >
+    <button (click)="DownloadFile()" class="btn btn-success mb-5 shadow-sm" >
         Descargar Currículum
     </button>
 
@@ -10,7 +10,7 @@
         <div class="col-lg shadow border m-1 rounded" style="background-color: white;">
             <div class="text-center">
                 <br>
-                <h2>Acerca de mí</h2>
+                <h2>Acerca de mí.</h2>
                 <img src="../../assets/default.jpg" alt="imagen de perfil" width="256" height="256"
                     class="rounded-circle">
 
@@ -26,20 +26,20 @@
             <div class="text-center">
                 <br>
                 <h2>
-                    Proyecto destacado
+                    Proyecto destacado.
                 </h2>
                 <br>
                 <h4> {{featuredProject.name}} </h4>
                 <br>
             </div>
 
-            <carousel>
-                <div *ngFor="let picture of featuredProject.pictures">
+            <carousel [isAnimated]="true">
+                <div *ngFor="let picture of featuredProject.pictures" >
                     <slide><img src="{{picture}}" alt="slide" style="display: block; width:100%"></slide>
                 </div>
             </carousel>
 
-            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p class="mt-2" style="text-align: justify; hyphens: auto; padding: 1%;">{{featuredProject.summary}}</p>
             <p> Visita la sección de portafolio para saber más.</p>
         </div>
     </div>

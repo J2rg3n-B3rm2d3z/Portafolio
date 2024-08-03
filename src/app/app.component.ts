@@ -18,7 +18,7 @@ import { NavbarService } from './_services/navbar.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  animationRefresh = 'root';
+  animationRefresh = 'slide-up';
 
   constructor(private navbarService: NavbarService, private router: Router) {
     this.navbarService.selectedOption.subscribe(newOption => { // From navbarService observe the value of selectedOption that use to change the animation refresh.
@@ -76,13 +76,13 @@ export class AppComponent implements OnInit {
       }
 
       default: {
-        return 'root'
+        return 'slide-up'
       }
     }
   }
 
   ngOnInit(): void {
-
+    
   }
 
 }

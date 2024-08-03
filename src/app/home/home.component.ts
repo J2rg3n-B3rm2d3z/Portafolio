@@ -14,7 +14,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-
+  currentSlideIndex = 0;
   featuredProject = {} as Project;
 
   constructor(private tittleService: Title, private projectService: ProjectsService, private renderer: Renderer2) {

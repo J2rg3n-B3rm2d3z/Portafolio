@@ -4,15 +4,15 @@
 </div>
 
 <div class="modal-body">
-    <carousel>
+    <carousel [isAnimated]="true">
         <div *ngFor="let picture of project.pictures">
             <slide><img src="{{picture}}" alt="slide" style="display: block; width:100%"></slide>
         </div>
     </carousel>
 
     <h3 class="mt-2">Descripción</h3>
-    <p>{{project.description}}</p>
-    <p>Puedes encontrar este proyecto en Github <a href="{{project.projectlink}}" target="_blank">Aquí</a></p>
+    <p  style="text-align: justify;"> {{project.description}}</p>
+    <p>Puedes encontrar este proyecto <a href="{{project.projectlink}}" target="_blank">aquí</a>.</p>
 
     <br>
     <div class="d-flex flex-wrap">

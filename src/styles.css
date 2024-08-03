@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files.*/
+
+/* Background page animation.*/
+
 body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -21,7 +24,7 @@ body {
     }
 }
 
-/**/
+/*Global settings.*/
 
 .container{
     max-width: 1140px;
@@ -113,8 +116,47 @@ body {
 }
 
 
-/*Animation for the head.*/
+/*Animation for slide-up.*/
 
+
+@keyframes enterPU {
+	from {
+		opacity: 0;
+		transform: translateY(100%);
+
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+
+	}
+}
+
+@keyframes exitPU {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+    to {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+}
+
+
+::view-transition-old(slide-up){
+    animation-duration: 1s;
+	animation-name: exitPU;
+}
+
+::view-transition-new(slide-up){
+    animation-duration: 1s;
+	animation-name: enterPU;
+}
+
+/*Animation for the root.*/
 
 @keyframes enterP {
 	from {
