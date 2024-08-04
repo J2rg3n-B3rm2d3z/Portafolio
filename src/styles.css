@@ -36,8 +36,8 @@ body {
     width: fit-content;
     font-size: 14px;
     line-height: 30px;
-    border-radius: 25px;
-    background-color: blue;
+    border-radius: 150px;
+    background-color: rgba(230, 229, 235, 0.75);
     color: white;
 }
 
