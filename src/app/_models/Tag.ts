@@ -24,13 +24,13 @@ export class Tag{
     static readonly CSS = new Tag('CSS','lightsteelblue');
     static readonly HTML = new Tag('HTML','darkorange');
     static readonly REDUX = new Tag('Redux','darkviolet');
-    static readonly JWT = new Tag('Json Web Token','lightgreen');
+    static readonly JWT = new Tag('JWT','lightgreen');
     static readonly VISUALSTUDIOCODE = new Tag('Visual Studio Code','royalblue');
     static readonly VISUALSTUDIO = new Tag('Visual Studio Community','rebeccapurple');
     static readonly FIGMA = new Tag('Figma','salmon');
     static readonly DRAWIO = new Tag('Draw.io','orangered');
     static readonly FIREBASE = new Tag('Firebase','firebrick');
-    static readonly WPF = new Tag('Windows Presentation Foundation','mediumslateblue');
+    static readonly WPF = new Tag('WPF','mediumslateblue');
     static readonly BLENDER = new Tag('Blender','sandybrown');
     static readonly PHOTOSHOP = new Tag('Photoshop','steelblue');
     static readonly ILLUSTRADOR = new Tag('Illustrador','sienna');
@@ -42,6 +42,12 @@ export class Tag{
     static readonly WORD = new Tag('Word','steelblue');
     static readonly PROJECT = new Tag('Project','seagreen');
     static readonly EXCEL = new Tag('Exel','darkgreen');
+
+    static readonly REDES = new Tag('Redes','darkgreen');
+    static readonly XML = new Tag('Xml','darkgreen');
+    static readonly VIRTUALBOX = new Tag('Virtual box','cornflowerblue');
+    static readonly GOOGLECOLAB = new Tag('Google Colab','darkgoldenrod');
+    static readonly IA = new Tag('IA','mediumvioletred');
 
     private constructor(private readonly key: string, public readonly color: string){
 

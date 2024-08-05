@@ -32,6 +32,7 @@ export class PortfolioComponent implements OnInit {
   visualbasic: boolean = false;
   css: boolean = false;
   html: boolean = false;
+  xml: boolean = false;
 
   angular: boolean = false;
   nodejs: boolean = false;
@@ -59,7 +60,11 @@ export class PortfolioComponent implements OnInit {
   illustrator: boolean = false;
   word: boolean = false;
   project: boolean = false;
-  excel: boolean = false
+  excel: boolean = false;
+  redes: boolean = false;
+  virtualbox: boolean = false;
+  googlecolab: boolean = false;
+  ia: boolean = false;
 
   windowsserver: boolean = false;
   linux: boolean = false;
@@ -215,6 +220,23 @@ export class PortfolioComponent implements OnInit {
       filterTags.push(Tag.KALILINUX)
     }
 
+
+    if (this.redes) {
+      filterTags.push(Tag.REDES)
+    }
+    if (this.virtualbox) {
+      filterTags.push(Tag.VIRTUALBOX)
+    }
+    if (this.googlecolab) {
+      filterTags.push(Tag.GOOGLECOLAB)
+    }
+    if (this.ia) {
+      filterTags.push(Tag.IA)
+    }
+    if (this.xml) {
+      filterTags.push(Tag.XML)
+    }
+
     if (
       this.typescript ||
       this.javascript ||
@@ -260,7 +282,13 @@ export class PortfolioComponent implements OnInit {
       this.linux ||
       this.ubuntu ||
       this.debian ||
-      this.kalilinux
+      this.kalilinux ||
+
+      this.redes ||
+      this.xml ||
+      this.virtualbox ||
+      this.googlecolab ||
+      this.ia
 
     ) {
       this.filtering = true;
@@ -285,6 +313,7 @@ export class PortfolioComponent implements OnInit {
     this.visualbasic = false;//
     this.css = false;//
     this.html = false;
+
 
     this.angular = false;
     this.nodejs = false;
@@ -320,6 +349,12 @@ export class PortfolioComponent implements OnInit {
     this.ubuntu = false;
     this.debian = false;
     this.kalilinux = false;
+
+    this.redes = false;
+    this.xml = false;
+    this.virtualbox = false;
+    this.googlecolab = false;
+    this.ia = false;
 
     this.filtering = false;
 

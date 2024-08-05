@@ -70,6 +70,11 @@
                                         [(ngModel)]="html" (change)="Filter()" name="Html">
                                     <label class="form-check-label small">Html</label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2"
+                                        [(ngModel)]="xml" (change)="Filter()" name="Xml">
+                                    <label class="form-check-label small">Xml</label>
+                                </div>
                             </div>
                         </div>
                         <div class="col">
@@ -131,6 +136,12 @@
                                         [(ngModel)]="visualstudiocommunity" (change)="Filter()"
                                         name="Visual Studio Community">
                                     <label class="form-check-label small">Visual Studio Community</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2"
+                                        [(ngModel)]="googlecolab" (change)="Filter()"
+                                        name="Google Colab">
+                                    <label class="form-check-label small">Google Colab</label>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +226,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <small><b>Offices:</b></small>
+                            <small><b>Office:</b></small>
                             <div class="form-group">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input position-static me-2"
@@ -252,6 +263,22 @@
                                         [(ngModel)]="wpf" (change)="Filter()" name="WPF">
                                     <label class="form-check-label small">WPF</label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2"
+                                        [(ngModel)]="redes" (change)="Filter()" name="Redes">
+                                    <label class="form-check-label small">Redes</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2"
+                                        [(ngModel)]="ia" (change)="Filter()" name="IA">
+                                    <label class="form-check-label small">IA</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2"
+                                        [(ngModel)]="virtualbox" (change)="Filter()" name="Virtual Box">
+                                    <label class="form-check-label small">Virtual Box</label>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

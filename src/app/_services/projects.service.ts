@@ -12,14 +12,169 @@ export class ProjectsService {
 
   projects: Project[] =
     [
-      { id: 0, name: "ShoList", pictures: ["https://i.postimg.cc/5yc4PQcq/ShoList4.png", "https://i.postimg.cc/Bv4Rgb9d/ShoList1.png", "https://i.postimg.cc/52wZLvGB/ShoList2.png", "https://i.postimg.cc/FFPGJb4L/ShoList6.png", "https://i.postimg.cc/Jhxvd8Rt/ShoList3.png", "https://i.postimg.cc/m2tj3cL6/ShoList5.png"], projectlink: "https://github.com/J2rg3n-B3rm2d3z/ShoList", summary: "Aplicación para móviles Android con el proposito de llevar el control de las listas de compras.", description: "Esta es una aplicación para móviles Android desarrollado en Java. En ella se puede crear, modificar y eliminar listas de compras para cualquier fin en específico. Esta aplicación puede ser utilizada para crear un presupuesto de las compras que se están por realizar, y también para llevar un historial de gastos de estas mismas.", tags: [Tag.JAVA, Tag.ANDROIDSTUDIO] },
-      { id: 1, name: "Ejemplo de proyecto de Angular", pictures: ["../../assets/image1.png", "../../assets/image2.png", "../../assets/image3.png"], projectlink: "https://github.com/J2rg3n-B3rm2d3z", summary: "Proyecto de prueba", description: "Esta es una descripcion", tags: [Tag.ANGULAR, Tag.TYPESCRIPT] },
-      { id: 2, name: "Ejemplo de proyecto de .NET", pictures: ["../../assets/image1.png", "../../assets/image2.png", "../../assets/image3.png"], projectlink: "https://github.com/J2rg3n-B3rm2d3z", summary: "Proyecto de prueba", description: "Esta es una descripcion", tags: [Tag.ASPNET, Tag.CSHARP] },
-      { id: 3, name: "Ejemplo de proyecto de Web API", pictures: ["../../assets/image1.png", "../../assets/image2.png", "../../assets/image3.png"], projectlink: "https://github.com/J2rg3n-B3rm2d3z", summary: "Proyecto de prueba", description: "Esta es una descripcion", tags: [Tag.ASPNET, Tag.CSHARP] },
-      { id: 4, name: "Ejemplo de proyecto de Chrome Extension", pictures: ["../../assets/image1.png", "../../assets/image2.png", "../../assets/image3.png"], projectlink: "https://github.com/J2rg3n-B3rm2d3z", summary: "Proyecto de prueba", description: "Esta es una descripcion", tags: [Tag.ANGULAR, Tag.PYTHON] },
-      { id: 5, name: "Aplicacion Movil", pictures: ["../../assets/image1.png", "../../assets/image2.png", "../../assets/image3.png"], projectlink: "https://github.com/J2rg3n-B3rm2d3z", summary: "Proyecto de prueba", description: "Esta es una descripcion", tags: [Tag.NODEJS, Tag.PYTHON] }
+      { 
+        id: 1, 
+        name: "Central Optic",
+        pictures: ["https://i.postimg.cc/QNBXzbYj/Central-Optic1.png", "https://i.postimg.cc/Tw44mnn9/Central-Optic2.png", "https://i.postimg.cc/kDrYY91R/Central-Optic3.png", "https://i.postimg.cc/SRYtGjrp/Central-Optic4.png",
+          "https://i.postimg.cc/Vs3YPC2n/Central-Optic5.png", "https://i.postimg.cc/65nBWQNS/Central-Optic6.png", "https://i.postimg.cc/3xZ7GbNF/Central-Optic7.png", "https://i.postimg.cc/VNLwWBbQ/Central-Optic8.png", "https://i.postimg.cc/N0JcJ91y/Central-Optic9.png"
+        ], 
+        projectlink: "https://github.com/stars/J2rg3n-B3rm2d3z/lists/central-optic", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE,Tag.SQLSERVER, Tag.CSHARP, Tag.ASPNET, Tag.JWT, Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP, Tag.WORD, Tag.DRAWIO]
+      },
+      { 
+        id: 9, 
+        name: "Bambishop",
+        pictures: ["https://i.postimg.cc/QdVNKn6T/Bambishop1.png", "https://i.postimg.cc/sDTDXRJz/Bambishop2.png", "https://i.postimg.cc/WbN1T4gS/Bambishop3.png", "https://i.postimg.cc/Pfz5gDpP/Bambishop4.png"
+        ], 
+        projectlink: "https://github.com/stars/J2rg3n-B3rm2d3z/lists/bambishop", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.SQLSERVER, Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE, Tag.CSHARP, Tag.ASPNET, Tag.REACT, Tag.REDUX, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP,  Tag.PHOTOSHOP]
+      },
+      { 
+        id: 0, 
+        name: "ShoList", 
+        pictures: ["https://i.postimg.cc/5yc4PQcq/ShoList4.png", "https://i.postimg.cc/Bv4Rgb9d/ShoList1.png", "https://i.postimg.cc/52wZLvGB/ShoList2.png", "https://i.postimg.cc/FFPGJb4L/ShoList6.png", "https://i.postimg.cc/Jhxvd8Rt/ShoList3.png", "https://i.postimg.cc/m2tj3cL6/ShoList5.png"], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/ShoList", 
+        summary: "Aplicación para móviles Android con el proposito de llevar el control de las listas de compras.", 
+        description: "Esta es una aplicación para móviles Android desarrollado en Java. En ella se puede crear, modificar y eliminar listas de compras para cualquier fin en específico. Esta aplicación puede ser utilizada para crear un presupuesto de las compras que se están por realizar, y también para llevar un historial de gastos de estas mismas.", 
+        tags: [Tag.ANDROIDSTUDIO, Tag.JAVA, Tag.SQLITE, Tag.XML, Tag.PHOTOSHOP] 
+      },
+      { 
+        id: 6, 
+        name: "Bekind", 
+        pictures: ["https://i.postimg.cc/SN08MfrZ/Bekind1.png", "https://i.postimg.cc/65dZL4bB/Bekind2.png", "https://i.postimg.cc/13sqWRbw/Bekind3.png", "https://i.postimg.cc/13BNbhZT/Bekind4.png",
+          "https://i.postimg.cc/XvvybHjv/Bekind5.png", "https://i.postimg.cc/JhdH4N05/Bekind6.png"
+        ], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/FinalProject", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.ANDROIDSTUDIO, Tag.KOTLIN, Tag.FIREBASE, Tag.XML, Tag.PHOTOSHOP] 
+      },
+      { 
+        id: 10, 
+        name: "Skin Medical Prescribe",
+        pictures: ["https://i.postimg.cc/bJssX1C7/Skin1.png", "https://i.postimg.cc/rs4ssMLg/Skin2.png", "https://i.postimg.cc/fLpkMk1J/Skin3.png", "https://i.postimg.cc/CMnzmHfD/Skin4.png",
+          "https://i.postimg.cc/RVcqzSdZ/Skin5.png", "https://i.postimg.cc/HsGjKcQN/Skin6.png", "https://i.postimg.cc/8zNcp2XB/Skin7.png", "https://i.postimg.cc/SxdsJgw0/Skin8.png", "https://i.postimg.cc/BvvvDx0j/Skin9.png"
+        ], 
+        projectlink: "https://drive.google.com/file/d/1zmSRSlgmVeXlYTkTDV_R_305M7O7vz0X/view?usp=sharing", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.WORD, Tag.EXCEL, Tag.PROJECT, Tag.DRAWIO, Tag.FIGMA, Tag.PHOTOSHOP]
+      },
+      { 
+        id: 11, 
+        name: "Modificación de kernel en Linux",
+        pictures: ["https://i.postimg.cc/zBGtKM8b/Aso1.png", "https://i.postimg.cc/nrs3wDsn/Aso2.png", "https://i.postimg.cc/RFpPRRZP/Aso3.png", "https://i.postimg.cc/1XLvx36w/Aso4.png",
+          "https://i.postimg.cc/RC8sJX8h/Aso5.png", "https://i.postimg.cc/m2HdY7fw/Aso6.png"
+        ], 
+        projectlink: "https://drive.google.com/file/d/1F_lRjrg-p40XeJzvgukIchmKBivI2gPJ/view?usp=sharing", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.LINUX, Tag.C, Tag.KALILINUX, Tag.WORD, Tag.REDES]
+      },
+      { 
+        id: 12, 
+        name: "Configuración de servicios de red en Linux",
+        pictures: ["https://i.postimg.cc/252Tkwhz/Redes1.png", "https://i.postimg.cc/zfJ0YMLt/Redes2.png", "https://i.postimg.cc/Px74Z5S9/Redes3.png", "https://i.postimg.cc/SsRdJMfc/Redes4.png",
+          "https://i.postimg.cc/fknf2gnv/Redes5.png", "https://i.postimg.cc/ZnyLLzgR/Redes6.png", "https://i.postimg.cc/fWt4PtQ3/Redes7.png", "https://i.postimg.cc/05Tg1k9V/Redes8.png", "https://i.postimg.cc/Jz89tpDJ/Redes9.png", "https://i.postimg.cc/9FZ6W6MC/Redes10.png"
+        ], 
+        projectlink: "https://drive.google.com/file/d/1t4vpxbE8hjQscTIXnhx4yltX9BK68ct7/view?usp=sharing", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.LINUX, Tag.KALILINUX, Tag.WORD, Tag.REDES]
+      },
+      { 
+        id: 13, 
+        name: "Configuración de servicios de red en Windows Server",
+        pictures: ["https://i.postimg.cc/6phFZCnP/Windows1.png", "https://i.postimg.cc/fLVP1Fp4/Windows2.png", "https://i.postimg.cc/HLsR9jtk/Windows3.png", "https://i.postimg.cc/SKT5TqZ7/Windows4.png",
+          "https://i.postimg.cc/Fsy6t0WK/Windows5.png", "https://i.postimg.cc/x1gF8nSD/Windows6.png", "https://i.postimg.cc/nLzSQgHs/Windows7.png", "https://i.postimg.cc/Gmb5b9Vx/Windows8.png", "https://i.postimg.cc/ZqM7PHRw/Windows9.png", "https://i.postimg.cc/zBHdxhH8/Windows10.png"
+        ], 
+        projectlink: "https://drive.google.com/drive/folders/17kMaqlKVwRehi3qLJgwuC1NQ5ERrYzGP?usp=sharing", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.LINUX, Tag.KALILINUX, Tag.WORD, Tag.REDES, Tag.VIRTUALBOX]
+      },
+      { 
+        id: 14, 
+        name: "Red Convolucional con Cifar10",
+        pictures: ["https://i.postimg.cc/8CRh2XCK/IA1.png", "https://i.postimg.cc/3R3gYj4K/IA2.png", "https://i.postimg.cc/d0P2ScJZ/IA3.png"], 
+        projectlink: "https://colab.research.google.com/drive/1yN0gAC1Qyozqyi_L5Cw93vYpV_BBweGE?usp=sharing", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.PYTHON, Tag.GOOGLECOLAB, Tag.IA]
+      },
+      { 
+        id: 7, 
+        name: "Simulador de ensamblador",
+        pictures: ["https://i.postimg.cc/bwF3PGXc/Simulador1.png", "https://i.postimg.cc/MK59sPdG/Simulador2.png", "https://i.postimg.cc/y8Nv2mby/Simulador3.png", "https://i.postimg.cc/g0X42Ydw/Simulador4.png",
+          "https://i.postimg.cc/PqgyLBrS/Simulador5.png", "https://i.postimg.cc/tTF5F2sp/Simulador6.png", "https://i.postimg.cc/d3v96rCd/Simulador7.png", "https://i.postimg.cc/hvr15v8Y/Simulador8.png", "https://i.postimg.cc/05dnQXgC/Simulador9.png"
+        ], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/Simulador", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.VISUALSTUDIO, Tag.CSHARP, Tag.WPF] 
+      },
+      { 
+        id: 8, 
+        name: "Lotería en Turbo C", 
+        pictures: ["https://i.postimg.cc/MH3T87GC/Loteria1.png", "https://i.postimg.cc/qRLq1VHM/Loteria2.png", "https://i.postimg.cc/cCLHj9d7/Loteria3.png"], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0",
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.C, Tag.TURBOC] 
+      },
+      { 
+        id: 2, 
+        name: "Registro académico en Turbo C", 
+        pictures: ["https://i.postimg.cc/28MBgDM0/Registro-Academico1.png", "https://i.postimg.cc/yNz3YTV9/Registro-Academico2.png", "https://i.postimg.cc/j2j7YdRF/Registro-Academico3.png",
+          "https://i.postimg.cc/ryh4CWJX/Registro-Academico4.png", "https://i.postimg.cc/KvRM9zqK/Registro-Academico5.png", "https://i.postimg.cc/7hQTH86Y/Registro-Academico6.png",
+          "https://i.postimg.cc/dVCTYfKw/Registro-Academico7.png", "https://i.postimg.cc/7LMGCT6R/Registro-Academico8.png"
+        ], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.C, Tag.TURBOC] 
+      },
+      { 
+        id: 3, 
+        name: "Pong en Turbo C", 
+        pictures: [
+          "https://i.postimg.cc/SsCYtLvD/Pong1.png", "https://i.postimg.cc/J73BNqJh/Pong2.png", "https://i.postimg.cc/T1cLTdGb/Pong3.png",
+          "https://i.postimg.cc/ZnmvkBkZ/Pong4.png", "https://i.postimg.cc/Fs9kDLgV/Pong5.png", "https://i.postimg.cc/9FJRSQL5/Pong6.png",
+          "https://i.postimg.cc/HkncC1NJ/Pong7.png", "https://i.postimg.cc/13dgmYxv/Pong8.png"
+        ], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.C, Tag.TURBOC] 
+      },
+      { 
+        id: 4, 
+        name: "Geometría computacional en Turbo C", 
+        pictures: ["https://i.postimg.cc/ZRYDPhxL/Geometria-Computacional1.png", "https://i.postimg.cc/257KB5h6/Geometria-Computacional2.png", "https://i.postimg.cc/Qd5PhmMc/Geometria-Computacional3.png", "https://i.postimg.cc/mrsnD9cJ/Geometria-Computacional4.png" ], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/Cierre-Convexo-C", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags:  [Tag.C, Tag.TURBOC] 
+       },
+      { 
+        id: 5, 
+        name: "Aeropuerto en Turbo C", 
+        pictures: ["https://i.postimg.cc/cHX1T0y1/Aeropuerto1.png", "https://i.postimg.cc/zvvzc68C/Aeropuerto2.png", "https://i.postimg.cc/KzZvn4Ws/Aeropuerto3.png", "https://i.postimg.cc/fyPznCR6/Aeropuerto4.png",
+          "https://i.postimg.cc/7YCP1FBD/Aeropuerto5.png", "https://i.postimg.cc/QNYxT8J0/Aeropuerto6.png", "https://i.postimg.cc/QxR8ffP7/Aeropuerto7.png"
+        ], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/Aeropuerto-Turbo-C", 
+        summary: "Sin resumen.", 
+        description: "Poner una descripción.", 
+        tags: [Tag.C, Tag.TURBOC] 
+      }
     ]
 
+
+    
   constructor() {
     
    }
