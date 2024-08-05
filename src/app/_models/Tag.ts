@@ -34,7 +34,7 @@ export class Tag{
     static readonly BLENDER = new Tag('Blender','sandybrown');
     static readonly PHOTOSHOP = new Tag('Photoshop','steelblue');
     static readonly ILLUSTRADOR = new Tag('Illustrador','sienna');
-    static readonly WINDOWSSERVER = new Tag('Windows Server','paleturquoise');
+    static readonly WINDOWSSERVER = new Tag('Windows Server','lightseagreen');
     static readonly LINUX = new Tag('Linux','black');
     static readonly UBUNTU = new Tag('Ubuntu','chocolate');
     static readonly DEBIAN = new Tag('Debian','crimson');
