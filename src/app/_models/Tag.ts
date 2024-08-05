@@ -41,7 +41,7 @@ export class Tag{
     static readonly KALILINUX = new Tag('Kali Linux','deepskyblue');
     static readonly WORD = new Tag('Word','steelblue');
     static readonly PROJECT = new Tag('Project','seagreen');
-    static readonly EXCEL = new Tag('Exel','darkgreen');
+    static readonly EXCEL = new Tag('Excel','darkgreen');
 
     static readonly REDES = new Tag('Redes','darkgreen');
     static readonly XML = new Tag('Xml','darkgreen');
