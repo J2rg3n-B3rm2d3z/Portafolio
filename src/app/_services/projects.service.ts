@@ -95,7 +95,7 @@ export class ProjectsService {
         projectlink: "https://drive.google.com/drive/folders/17kMaqlKVwRehi3qLJgwuC1NQ5ERrYzGP?usp=sharing", 
         summary: "Sin resumen.", 
         description: "Poner una descripción.", 
-        tags: [Tag.LINUX, Tag.KALILINUX, Tag.WORD, Tag.REDES, Tag.VIRTUALBOX]
+        tags: [Tag.WINDOWSSERVER, Tag.KALILINUX, Tag.WORD, Tag.REDES, Tag.VIRTUALBOX]
       },
       { 
         id: 8, 
