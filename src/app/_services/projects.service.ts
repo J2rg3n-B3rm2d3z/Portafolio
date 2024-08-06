@@ -9,6 +9,7 @@ export class ProjectsService {
 
   //this is the projects.
   //Image save in postimage 1280x720s
+  //Add some blender project? IDN
 
   projects: Project[] =
     [
@@ -19,7 +20,7 @@ export class ProjectsService {
           "https://i.postimg.cc/Vs3YPC2n/Central-Optic5.png", "https://i.postimg.cc/65nBWQNS/Central-Optic6.png", "https://i.postimg.cc/3xZ7GbNF/Central-Optic7.png", "https://i.postimg.cc/VNLwWBbQ/Central-Optic8.png", "https://i.postimg.cc/N0JcJ91y/Central-Optic9.png"
         ], 
         projectlink: "https://github.com/stars/J2rg3n-B3rm2d3z/lists/central-optic", 
-        summary: "Sin resumen.", 
+        summary: "Sistema de información web de control de inventario y facturación para la óptica \"Central Optic\".", 
         description: "Poner una descripción.", 
         tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE,Tag.SQLSERVER, Tag.CSHARP, Tag.ASPNET, Tag.JWT, Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP, Tag.WORD, Tag.DRAWIO]
       },
@@ -29,7 +30,7 @@ export class ProjectsService {
         pictures: ["https://i.postimg.cc/QdVNKn6T/Bambishop1.png", "https://i.postimg.cc/sDTDXRJz/Bambishop2.png", "https://i.postimg.cc/WbN1T4gS/Bambishop3.png", "https://i.postimg.cc/Pfz5gDpP/Bambishop4.png"
         ], 
         projectlink: "https://github.com/stars/J2rg3n-B3rm2d3z/lists/bambishop", 
-        summary: "Sin resumen.", 
+        summary: "Prototipo de sistema de información web de control de ventas e inventario para el emprendimiento \"Bambishop\".",
         description: "Poner una descripción.", 
         tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE, Tag.SQLSERVER, Tag.CSHARP, Tag.ASPNET, Tag.REACT, Tag.REDUX, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP,  Tag.PHOTOSHOP]
       },
@@ -49,7 +50,7 @@ export class ProjectsService {
           "https://i.postimg.cc/XvvybHjv/Bekind5.png", "https://i.postimg.cc/JhdH4N05/Bekind6.png"
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/FinalProject", 
-        summary: "Sin resumen.", 
+        summary: "Prototipo de aplicación colaborativa para móviles Android con el fin de mostrar ATMs cercanos, indicando si estos estan vacíos o no.", 
         description: "Poner una descripción.", 
         tags: [Tag.ANDROIDSTUDIO, Tag.KOTLIN, Tag.FIREBASE, Tag.XML, Tag.PHOTOSHOP] 
       },
@@ -60,40 +61,40 @@ export class ProjectsService {
           "https://i.postimg.cc/RVcqzSdZ/Skin5.png", "https://i.postimg.cc/HsGjKcQN/Skin6.png", "https://i.postimg.cc/8zNcp2XB/Skin7.png", "https://i.postimg.cc/SxdsJgw0/Skin8.png", "https://i.postimg.cc/BvvvDx0j/Skin9.png"
         ], 
         projectlink: "https://drive.google.com/file/d/1zmSRSlgmVeXlYTkTDV_R_305M7O7vz0X/view?usp=sharing", 
-        summary: "Sin resumen.", 
+        summary: "Estudio de factibilidad de un sistema de información web de prescripciones medicas para clínicas dermatológicas.", 
         description: "Poner una descripción.", 
         tags: [Tag.WORD, Tag.EXCEL, Tag.PROJECT, Tag.DRAWIO, Tag.FIGMA, Tag.PHOTOSHOP]
       },
       { 
         id: 5, 
-        name: "Modificación de kernel en Linux",
+        name: "Modificación de kernel en Linux.",
         pictures: ["https://i.postimg.cc/zBGtKM8b/Aso1.png", "https://i.postimg.cc/nrs3wDsn/Aso2.png", "https://i.postimg.cc/RFpPRRZP/Aso3.png", "https://i.postimg.cc/1XLvx36w/Aso4.png",
           "https://i.postimg.cc/RC8sJX8h/Aso5.png", "https://i.postimg.cc/m2HdY7fw/Aso6.png"
         ], 
         projectlink: "https://drive.google.com/file/d/1F_lRjrg-p40XeJzvgukIchmKBivI2gPJ/view?usp=sharing", 
-        summary: "Sin resumen.", 
+        summary: "Modificación de la pantalla de arranque, creación del prototipo de un driver y configuración de servicios en la red, en la distribución de Kali Linux.", 
         description: "Poner una descripción.", 
         tags: [Tag.LINUX, Tag.C, Tag.KALILINUX, Tag.WORD, Tag.REDES]
       },
       { 
         id: 6, 
-        name: "Configuración de servicios de red en Linux",
+        name: "Configuración de servicios de red en Linux.",
         pictures: ["https://i.postimg.cc/252Tkwhz/Redes1.png", "https://i.postimg.cc/zfJ0YMLt/Redes2.png", "https://i.postimg.cc/Px74Z5S9/Redes3.png", "https://i.postimg.cc/SsRdJMfc/Redes4.png",
           "https://i.postimg.cc/fknf2gnv/Redes5.png", "https://i.postimg.cc/ZnyLLzgR/Redes6.png", "https://i.postimg.cc/fWt4PtQ3/Redes7.png", "https://i.postimg.cc/05Tg1k9V/Redes8.png", "https://i.postimg.cc/Jz89tpDJ/Redes9.png", "https://i.postimg.cc/9FZ6W6MC/Redes10.png"
         ], 
         projectlink: "https://drive.google.com/file/d/1t4vpxbE8hjQscTIXnhx4yltX9BK68ct7/view?usp=sharing", 
-        summary: "Sin resumen.", 
+        summary: "Configuración de servicios en la red de DNS, DHCP, Web, Correo electrónico, FTP, VoIP y Streaming en la distribución de Kali Linux.", 
         description: "Poner una descripción.", 
         tags: [Tag.LINUX, Tag.KALILINUX, Tag.WORD, Tag.REDES]
       },
       { 
         id: 7, 
-        name: "Configuración de servicios de red en Windows Server",
+        name: "Configuración de servicios de red en Windows Server.",
         pictures: ["https://i.postimg.cc/6phFZCnP/Windows1.png", "https://i.postimg.cc/fLVP1Fp4/Windows2.png", "https://i.postimg.cc/HLsR9jtk/Windows3.png", "https://i.postimg.cc/SKT5TqZ7/Windows4.png",
           "https://i.postimg.cc/Fsy6t0WK/Windows5.png", "https://i.postimg.cc/x1gF8nSD/Windows6.png", "https://i.postimg.cc/nLzSQgHs/Windows7.png", "https://i.postimg.cc/Gmb5b9Vx/Windows8.png", "https://i.postimg.cc/ZqM7PHRw/Windows9.png", "https://i.postimg.cc/zBHdxhH8/Windows10.png"
         ], 
         projectlink: "https://drive.google.com/drive/folders/17kMaqlKVwRehi3qLJgwuC1NQ5ERrYzGP?usp=sharing", 
-        summary: "Sin resumen.", 
+        summary: "Configuración de servicios en la red virtualizada de DNS, DHCP, Active Directory, Web, y FTP en Windows Server.", 
         description: "Poner una descripción.", 
         tags: [Tag.WINDOWSSERVER, Tag.WORD, Tag.REDES, Tag.VIRTUALBOX]
       },
@@ -102,7 +103,7 @@ export class ProjectsService {
         name: "Red Convolucional con Cifar10",
         pictures: ["https://i.postimg.cc/8CRh2XCK/IA1.png", "https://i.postimg.cc/3R3gYj4K/IA2.png", "https://i.postimg.cc/d0P2ScJZ/IA3.png"], 
         projectlink: "https://colab.research.google.com/drive/1yN0gAC1Qyozqyi_L5Cw93vYpV_BBweGE?usp=sharing", 
-        summary: "Sin resumen.", 
+        summary: "Desarrollo del prototipo de una red neuronal convolucional con la base de datos de imágenes Cifar10.", 
         description: "Poner una descripción.", 
         tags: [Tag.PYTHON, Tag.GOOGLECOLAB, Tag.IA]
       },
@@ -113,16 +114,16 @@ export class ProjectsService {
           "https://i.postimg.cc/PqgyLBrS/Simulador5.png", "https://i.postimg.cc/tTF5F2sp/Simulador6.png", "https://i.postimg.cc/d3v96rCd/Simulador7.png", "https://i.postimg.cc/hvr15v8Y/Simulador8.png", "https://i.postimg.cc/05dnQXgC/Simulador9.png"
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Simulador", 
-        summary: "Sin resumen.", 
+        summary: "Aplicación para escritorio de un simulador de la arquitectura ensamblador de registros de 2 direcciones.", 
         description: "Poner una descripción.", 
-        tags: [Tag.VISUALSTUDIO, Tag.CSHARP, Tag.WPF] 
+        tags: [Tag.VISUALSTUDIO, Tag.CSHARP, Tag.WPF, Tag.XML] 
       },
       { 
         id: 10, 
         name: "Lotería en Turbo C", 
         pictures: ["https://i.postimg.cc/MH3T87GC/Loteria1.png", "https://i.postimg.cc/qRLq1VHM/Loteria2.png", "https://i.postimg.cc/cCLHj9d7/Loteria3.png"], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0",
-        summary: "Sin resumen.", 
+        summary: "Programación de un juego de lotería en el emulador de DOSBOX utilizando Turbo C.", 
         description: "Poner una descripción.", 
         tags: [Tag.C, Tag.TURBOC] 
       },
@@ -134,7 +135,7 @@ export class ProjectsService {
           "https://i.postimg.cc/dVCTYfKw/Registro-Academico7.png", "https://i.postimg.cc/7LMGCT6R/Registro-Academico8.png"
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0", 
-        summary: "Sin resumen.", 
+        summary: "Programación de un sistema de registro académico en el emulador de DOSBOX utilizando Turbo C.", 
         description: "Poner una descripción.", 
         tags: [Tag.C, Tag.TURBOC] 
       },
@@ -147,7 +148,7 @@ export class ProjectsService {
           "https://i.postimg.cc/HkncC1NJ/Pong7.png", "https://i.postimg.cc/13dgmYxv/Pong8.png"
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0", 
-        summary: "Sin resumen.", 
+        summary: "Programación de un juego de Pong en el emulador de DOSBOX utilizando Turbo C por medio de sus primitivas graficas.", 
         description: "Poner una descripción.", 
         tags: [Tag.C, Tag.TURBOC] 
       },
@@ -156,7 +157,7 @@ export class ProjectsService {
         name: "Geometría computacional en Turbo C", 
         pictures: ["https://i.postimg.cc/ZRYDPhxL/Geometria-Computacional1.png", "https://i.postimg.cc/257KB5h6/Geometria-Computacional2.png", "https://i.postimg.cc/Qd5PhmMc/Geometria-Computacional3.png", "https://i.postimg.cc/mrsnD9cJ/Geometria-Computacional4.png" ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Cierre-Convexo-C", 
-        summary: "Sin resumen.", 
+        summary: "Programación de tres algoritmos de cierres convexos y un algoritmo para realizar un diagrama de Voronoi, en el emulador de DOSBOX utilizando Turbo C por medio de sus primitivas graficas.", 
         description: "Poner una descripción.", 
         tags:  [Tag.C, Tag.TURBOC] 
        },
@@ -167,7 +168,7 @@ export class ProjectsService {
           "https://i.postimg.cc/7YCP1FBD/Aeropuerto5.png", "https://i.postimg.cc/QNYxT8J0/Aeropuerto6.png", "https://i.postimg.cc/QxR8ffP7/Aeropuerto7.png"
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Aeropuerto-Turbo-C", 
-        summary: "Sin resumen.", 
+        summary: "Programación de una simulación de la cabina de un aeropuerto en el emulador de DOSBOX utilizando Turbo C por medio de sus primitivas graficas.",
         description: "Poner una descripción.", 
         tags: [Tag.C, Tag.TURBOC] 
       }
