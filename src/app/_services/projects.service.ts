@@ -10,6 +10,7 @@ export class ProjectsService {
   //this is the projects.
   //Image save in postimage 1280x720s
   //Add some blender project? IDN
+  //Put Linux - Debian, Ubuntu projects and MADI and Python
 
   projects: Project[] =
     [

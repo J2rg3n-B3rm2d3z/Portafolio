@@ -2,7 +2,7 @@
 
     <br>
 
-    <button (click)="DownloadFile()" class="btn btn-success mb-5 shadow-sm" >
+    <button (click)="DownloadFile()" class="btn btn-success mb-5 shadow-sm">
         Descargar Currículum
     </button>
 
@@ -10,7 +10,7 @@
         <div class="col-lg shadow border m-1 rounded" style="background-color: white;">
             <div class="text-center">
                 <br>
-                <h2>Acerca de mí.</h2>
+                <h2>Acerca de mí</h2>
                 <img src="../../assets/default.jpg" alt="imagen de perfil" width="256" height="256"
                     class="rounded-circle">
 
@@ -26,7 +26,7 @@
             <div class="text-center">
                 <br>
                 <h2>
-                    Proyecto destacado.
+                    Proyecto destacado
                 </h2>
                 <br>
                 <h4> {{featuredProject.name}} </h4>
@@ -34,7 +34,7 @@
             </div>
 
             <carousel [isAnimated]="true">
-                <div *ngFor="let picture of featuredProject.pictures" >
+                <div *ngFor="let picture of featuredProject.pictures">
                     <slide><img src="{{picture}}" alt="slide" style="display: block; width:100%"></slide>
                 </div>
             </carousel>
@@ -43,6 +43,70 @@
             <p> Visita la sección de portafolio para saber más.</p>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-lg shadow border m-1 rounded" style="background-color: white;">
+            <div class="text-center">
+                <br>
+                <h2>Habilidades</h2>
+
+                <ul class="list-group text-start m-1" style="hyphens: auto; padding: 3%;">
+                    <li *ngFor="let hability of habilities" class="list-group-item shadow-sm"
+                        [ngClass]="{'grassetto': hability === hoveredItem}" (mouseenter)="hoveredItem = hability"
+                        (mouseleave)="hoveredItem = null">
+                        ➤ &nbsp;&nbsp;&nbsp;{{ hability }}
+                    </li>
+                </ul>
+            </div>
+            <br>
+        </div>
+        <div class="col-lg shadow border m-1 rounded" style="background-color: white;">
+            <div class="text-center">
+                <br>
+                <h2>Idiomas</h2>
+                <div class="row m-4">
+                    <div class="col shadow-sm border m-1">
+                        <br>
+                        <img src="../../assets/spanish.png" alt="spanish" width="100" height="100"
+                            class="rounded-circle shadow border m-1">
+                        <br>
+                        <br>
+                        <h5>
+                            <b>Español</b>
+                        </h5>
+                        <br>
+                        <ul class="text-start m-1">
+                            <li *ngFor="let item of spanish">
+                                {{ item }}
+                            </li>
+                        </ul>
+                        <br>
+                    </div>
+
+                    <div class="col shadow-sm border m-1">
+                        <br>
+                        <img src="../../assets/english.png" alt="spanish" width="100" height="100"
+                            class="rounded-circle shadow border m-1">
+                        <br>
+                        <br>
+                        <h5>
+                           <b>Ingles</b> 
+                        </h5>
+                        <br>
+                        <ul class="text-start">
+                            <li *ngFor="let item of english">
+                                {{ item }}
+                            </li>
+                        </ul>
+                        <br>
+                    </div>
+
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
     <br>
     <br>
+
 </div>

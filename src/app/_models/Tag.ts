@@ -49,6 +49,8 @@ export class Tag{
     static readonly GOOGLECOLAB = new Tag('Google Colab','darkgoldenrod');
     static readonly IA = new Tag('IA','mediumvioletred');
 
+    //Put Vmware
+
     private constructor(private readonly key: string, public readonly color: string){
 
     }
