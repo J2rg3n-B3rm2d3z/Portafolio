@@ -63,6 +63,7 @@ export class PortfolioComponent implements OnInit {
   excel: boolean = false;
   redes: boolean = false;
   virtualbox: boolean = false;
+  vmware: boolean = false;
   googlecolab: boolean = false;
   ia: boolean = false;
 
@@ -227,6 +228,9 @@ export class PortfolioComponent implements OnInit {
     if (this.virtualbox) {
       filterTags.push(Tag.VIRTUALBOX)
     }
+    if(this.vmware){
+      filterTags.push(Tag.VMWAREWORKSTATION)
+    }
     if (this.googlecolab) {
       filterTags.push(Tag.GOOGLECOLAB)
     }
@@ -287,6 +291,7 @@ export class PortfolioComponent implements OnInit {
       this.redes ||
       this.xml ||
       this.virtualbox ||
+      this.vmware ||
       this.googlecolab ||
       this.ia
 
@@ -353,6 +358,7 @@ export class PortfolioComponent implements OnInit {
     this.redes = false;
     this.xml = false;
     this.virtualbox = false;
+    this.vmware = false;
     this.googlecolab = false;
     this.ia = false;
 

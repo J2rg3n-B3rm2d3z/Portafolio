@@ -15,8 +15,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   habilities = ['Trabajo en equipo', 'Liderazgo', 'Sentido de responsabilidad', 'Disciplina', 'Creatividad', 'Rápido aprendizaje', 'Comunicación asertiva', 'Pensamiento crítico, analítico y resolutivo'];
-  spanish = ['Escrito: Nativo', 'Lectura: Nativo', 'Conversacional: Nativo'];
-  english = ['Escrito: Básico', 'Lectura: Intermedio', 'Conversacional: Básico'];
+  spanish = ['Escritura: Nativo', 'Lectura: Nativo', 'Conversacional: Nativo'];
+  english = ['Escritura: Básico', 'Lectura: Intermedio', 'Conversacional: Básico'];
   
   hoveredItem: (string | null) = null;
   featuredProject = {} as Project;

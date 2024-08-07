@@ -46,6 +46,7 @@ export class Tag{
     static readonly REDES = new Tag('Redes','darkgreen');
     static readonly XML = new Tag('Xml','darkgreen');
     static readonly VIRTUALBOX = new Tag('Virtual box','cornflowerblue');
+    static readonly VMWAREWORKSTATION = new Tag('VMWare Workstation','deepskyblue');
     static readonly GOOGLECOLAB = new Tag('Google Colab','darkgoldenrod');
     static readonly IA = new Tag('IA','mediumvioletred');
 

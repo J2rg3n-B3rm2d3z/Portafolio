@@ -40,7 +40,7 @@ export class ProjectsService {
         name: "ShoList", 
         pictures: ["https://i.postimg.cc/5yc4PQcq/ShoList4.png", "https://i.postimg.cc/Bv4Rgb9d/ShoList1.png", "https://i.postimg.cc/52wZLvGB/ShoList2.png", "https://i.postimg.cc/FFPGJb4L/ShoList6.png", "https://i.postimg.cc/Jhxvd8Rt/ShoList3.png", "https://i.postimg.cc/m2tj3cL6/ShoList5.png"], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/ShoList", 
-        summary: "Aplicación para móviles Android con el proposito de llevar el control de las listas de compras.", 
+        summary: "Aplicación para móviles android con el proposito de llevar el control de las listas de compras.", 
         description: "Esta es una aplicación para móviles Android desarrollado en Java. En ella se puede crear, modificar y eliminar listas de compras para cualquier fin en específico. Esta aplicación puede ser utilizada para crear un presupuesto de las compras que se están por realizar, y también para llevar un historial de gastos de estas mismas.", 
         tags: [Tag.ANDROIDSTUDIO, Tag.JAVA, Tag.SQLITE, Tag.XML, Tag.PHOTOSHOP] 
       },
@@ -121,6 +121,28 @@ export class ProjectsService {
       },
       { 
         id: 10, 
+        name: "Ejercicios de shell en Linux", 
+        pictures: ["https://i.postimg.cc/jq3973QJ/Debian1.png", "https://i.postimg.cc/3Rnq9nsV/Debian2.png", "https://i.postimg.cc/D00MN1FZ/Debian3.png", "https://i.postimg.cc/cCzbG64c/Debian4.png",
+          "https://i.postimg.cc/0264dGcX/Debian5.png", "https://i.postimg.cc/K8BsCGXn/Debian6.png", "https://i.postimg.cc/bNKB6G5y/Debian7.png", "https://i.postimg.cc/CK06g3Y9/Debian8.png", "https://i.postimg.cc/W47Yb51z/Debian9.png", "https://i.postimg.cc/pTXG9KmZ/Debian10.png"
+        ], 
+        projectlink: "https://drive.google.com/drive/folders/1EW86A1rSEm1Hcf2Sfbe8ZXucqz79IMev?usp=sharing", 
+        summary: "Documentación de ejercicios prácticos de comandos en el shell de Linux utilizando la distribución de Debian.",
+        description: "Poner una descripción.", 
+        tags: [Tag.VMWAREWORKSTATION, Tag.DEBIAN, Tag.LINUX,  Tag.WORD] 
+      },
+      { 
+        id: 11, 
+        name: "Modelados en Blender", 
+        pictures: ["https://i.postimg.cc/tCLTR5sh/Blender1.png", "https://i.postimg.cc/6qq3qbVh/Blender2.png", "https://i.postimg.cc/T2N1FGGN/Blender3.png", "https://i.postimg.cc/NfyFwVjs/Blender4.png",
+          "https://i.postimg.cc/pdBXZMqZ/Blender5.png", "https://i.postimg.cc/qRMBDDFd/Blender6.png", "https://i.postimg.cc/Y0Tp9rCp/Blender7.png"
+        ], 
+        projectlink: "https://drive.google.com/drive/folders/1CMqaVsnJhHRAvootUEAK9nsURiRGOjRr?usp=sharing", 
+        summary: "Modelados en 3D realizados en el software de blender, aplicando texturas, addons, nodos geométricos, nodos de texturas, etc.",
+        description: "Poner una descripción.", 
+        tags: [Tag.BLENDER, Tag.PHOTOSHOP] 
+      },
+      { 
+        id: 12, 
         name: "Lotería en Turbo C", 
         pictures: ["https://i.postimg.cc/MH3T87GC/Loteria1.png", "https://i.postimg.cc/qRLq1VHM/Loteria2.png", "https://i.postimg.cc/cCLHj9d7/Loteria3.png"], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0",
@@ -129,7 +151,7 @@ export class ProjectsService {
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
-        id: 11, 
+        id: 13, 
         name: "Registro académico en Turbo C", 
         pictures: ["https://i.postimg.cc/28MBgDM0/Registro-Academico1.png", "https://i.postimg.cc/yNz3YTV9/Registro-Academico2.png", "https://i.postimg.cc/j2j7YdRF/Registro-Academico3.png",
           "https://i.postimg.cc/ryh4CWJX/Registro-Academico4.png", "https://i.postimg.cc/KvRM9zqK/Registro-Academico5.png", "https://i.postimg.cc/7hQTH86Y/Registro-Academico6.png",
@@ -141,7 +163,7 @@ export class ProjectsService {
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
-        id: 12, 
+        id: 14, 
         name: "Pong en Turbo C", 
         pictures: [
           "https://i.postimg.cc/SsCYtLvD/Pong1.png", "https://i.postimg.cc/J73BNqJh/Pong2.png", "https://i.postimg.cc/T1cLTdGb/Pong3.png",
@@ -154,7 +176,7 @@ export class ProjectsService {
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
-        id: 13, 
+        id: 15, 
         name: "Geometría computacional en Turbo C", 
         pictures: ["https://i.postimg.cc/ZRYDPhxL/Geometria-Computacional1.png", "https://i.postimg.cc/257KB5h6/Geometria-Computacional2.png", "https://i.postimg.cc/Qd5PhmMc/Geometria-Computacional3.png", "https://i.postimg.cc/mrsnD9cJ/Geometria-Computacional4.png" ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Cierre-Convexo-C", 
@@ -163,7 +185,7 @@ export class ProjectsService {
         tags:  [Tag.C, Tag.TURBOC] 
        },
       { 
-        id: 14, 
+        id: 16,
         name: "Aeropuerto en Turbo C", 
         pictures: ["https://i.postimg.cc/cHX1T0y1/Aeropuerto1.png", "https://i.postimg.cc/zvvzc68C/Aeropuerto2.png", "https://i.postimg.cc/KzZvn4Ws/Aeropuerto3.png", "https://i.postimg.cc/fyPznCR6/Aeropuerto4.png",
           "https://i.postimg.cc/7YCP1FBD/Aeropuerto5.png", "https://i.postimg.cc/QNYxT8J0/Aeropuerto6.png", "https://i.postimg.cc/QxR8ffP7/Aeropuerto7.png"

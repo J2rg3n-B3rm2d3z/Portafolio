@@ -278,6 +278,11 @@
                                         [(ngModel)]="virtualbox" (change)="Filter()" name="Virtual Box">
                                     <label class="form-check-label small">Virtual Box</label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2"
+                                        [(ngModel)]="vmware" (change)="Filter()" name="VMware Workstation">
+                                    <label class="form-check-label small">VMware Workstation</label>
+                                </div>
                                 
                             </div>
                         </div>
