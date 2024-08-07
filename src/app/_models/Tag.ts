@@ -49,6 +49,7 @@ export class Tag{
     static readonly VMWAREWORKSTATION = new Tag('VMWare Workstation','deepskyblue');
     static readonly GOOGLECOLAB = new Tag('Google Colab','darkgoldenrod');
     static readonly IA = new Tag('IA','mediumvioletred');
+    static readonly SPIDER = new Tag('Spyder', 'limegreen');
 
     //Put Vmware
 

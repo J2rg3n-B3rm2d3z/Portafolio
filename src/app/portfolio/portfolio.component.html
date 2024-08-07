@@ -143,6 +143,12 @@
                                         name="Google Colab">
                                     <label class="form-check-label small">Google Colab</label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2"
+                                        [(ngModel)]="spyder" (change)="Filter()"
+                                        name="Spyder">
+                                    <label class="form-check-label small">Spyder</label>
+                                </div>
                             </div>
                         </div>
                         <div class="col">

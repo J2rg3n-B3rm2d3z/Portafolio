@@ -45,6 +45,7 @@ export class PortfolioComponent implements OnInit {
   sqlservermanagement: boolean = false;
   visualstudiocode: boolean = false;
   visualstudiocommunity: boolean = false;
+  spyder: boolean = false;
 
   sqlite: boolean = false;
   sqlserver: boolean = false;
@@ -160,6 +161,9 @@ export class PortfolioComponent implements OnInit {
     if (this.visualstudiocommunity) {
       filterTags.push(Tag.VISUALSTUDIO)
     }
+    if(this.spyder){
+      filterTags.push(Tag.SPIDER)
+    }
 
     if (this.sqlite) {
       filterTags.push(Tag.SQLITE)
@@ -265,6 +269,7 @@ export class PortfolioComponent implements OnInit {
       this.visualstudiocode ||
       this.visualstudiocommunity ||
       this.turboc ||
+      this.spyder ||
 
       this.sqlite ||
       this.sqlserver ||
@@ -331,6 +336,7 @@ export class PortfolioComponent implements OnInit {
     this.sqlservermanagement = false;
     this.visualstudiocode = false;
     this.visualstudiocommunity = false;
+    this.spyder = false;
 
     this.sqlite = false;
     this.sqlserver = false;

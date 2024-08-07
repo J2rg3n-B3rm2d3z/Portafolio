@@ -68,7 +68,7 @@ export class ProjectsService {
       },
       { 
         id: 5, 
-        name: "Modificación de kernel en Linux.",
+        name: "Modificación de kernel en Kali Linux.",
         pictures: ["https://i.postimg.cc/zBGtKM8b/Aso1.png", "https://i.postimg.cc/nrs3wDsn/Aso2.png", "https://i.postimg.cc/RFpPRRZP/Aso3.png", "https://i.postimg.cc/1XLvx36w/Aso4.png",
           "https://i.postimg.cc/RC8sJX8h/Aso5.png", "https://i.postimg.cc/m2HdY7fw/Aso6.png"
         ], 
@@ -79,7 +79,7 @@ export class ProjectsService {
       },
       { 
         id: 6, 
-        name: "Configuración de servicios de red en Linux.",
+        name: "Configuración de servicios de red en Kali Linux.",
         pictures: ["https://i.postimg.cc/252Tkwhz/Redes1.png", "https://i.postimg.cc/zfJ0YMLt/Redes2.png", "https://i.postimg.cc/Px74Z5S9/Redes3.png", "https://i.postimg.cc/SsRdJMfc/Redes4.png",
           "https://i.postimg.cc/fknf2gnv/Redes5.png", "https://i.postimg.cc/ZnyLLzgR/Redes6.png", "https://i.postimg.cc/fWt4PtQ3/Redes7.png", "https://i.postimg.cc/05Tg1k9V/Redes8.png", "https://i.postimg.cc/Jz89tpDJ/Redes9.png", "https://i.postimg.cc/9FZ6W6MC/Redes10.png"
         ], 
@@ -120,7 +120,18 @@ export class ProjectsService {
         tags: [Tag.VISUALSTUDIO, Tag.CSHARP, Tag.WPF, Tag.XML] 
       },
       { 
-        id: 10, 
+        id: 10,
+        name: "Configuración de servicios de red en Ubuntu.",
+        pictures: ["https://i.postimg.cc/QMcz506p/Ubuntu1.png", "https://i.postimg.cc/sXyNJ78b/Ubuntu2.png", "https://i.postimg.cc/pTZ1cyMr/Ubuntu3.png", "https://i.postimg.cc/tJ4vKy95/Ubuntu4.png",
+          "https://i.postimg.cc/brVV8MJj/Ubuntu5.png", "https://i.postimg.cc/dtDSnqHQ/Ubuntu6.png", "https://i.postimg.cc/KvVpHdwP/Ubuntu7.png",  "https://i.postimg.cc/T2t4rycH/Ubuntu8.png", "https://i.postimg.cc/P5wVsSnB/Ubuntu9.png", "https://i.postimg.cc/5t5Pjj0g/Ubuntu10.png"
+        ], 
+        projectlink: "https://drive.google.com/file/d/1-rYx55FSEEmBQRI_ixSfWlndmYQ3ojPo/view?usp=sharing", 
+        summary: "Configuración de servicios en la red virtualizada de DNS, Web, Correo electrónico, Samba, FTP y SSH en Ubuntu.",
+        description: "Poner una descripción.", 
+        tags: [Tag.VMWAREWORKSTATION, Tag.LINUX, Tag.UBUNTU, Tag.WORD, Tag.REDES] 
+      },
+      { 
+        id: 11, 
         name: "Ejercicios de shell en Linux", 
         pictures: ["https://i.postimg.cc/jq3973QJ/Debian1.png", "https://i.postimg.cc/3Rnq9nsV/Debian2.png", "https://i.postimg.cc/D00MN1FZ/Debian3.png", "https://i.postimg.cc/cCzbG64c/Debian4.png",
           "https://i.postimg.cc/0264dGcX/Debian5.png", "https://i.postimg.cc/K8BsCGXn/Debian6.png", "https://i.postimg.cc/bNKB6G5y/Debian7.png", "https://i.postimg.cc/CK06g3Y9/Debian8.png", "https://i.postimg.cc/W47Yb51z/Debian9.png", "https://i.postimg.cc/pTXG9KmZ/Debian10.png"
@@ -128,10 +139,10 @@ export class ProjectsService {
         projectlink: "https://drive.google.com/drive/folders/1EW86A1rSEm1Hcf2Sfbe8ZXucqz79IMev?usp=sharing", 
         summary: "Documentación de ejercicios prácticos de comandos en el shell de Linux utilizando la distribución de Debian.",
         description: "Poner una descripción.", 
-        tags: [Tag.VMWAREWORKSTATION, Tag.DEBIAN, Tag.LINUX,  Tag.WORD] 
+        tags: [Tag.VMWAREWORKSTATION, Tag.LINUX, Tag.DEBIAN,  Tag.WORD] 
       },
       { 
-        id: 11, 
+        id: 12, 
         name: "Modelados en Blender", 
         pictures: ["https://i.postimg.cc/tCLTR5sh/Blender1.png", "https://i.postimg.cc/6qq3qbVh/Blender2.png", "https://i.postimg.cc/T2N1FGGN/Blender3.png", "https://i.postimg.cc/NfyFwVjs/Blender4.png",
           "https://i.postimg.cc/pdBXZMqZ/Blender5.png", "https://i.postimg.cc/qRMBDDFd/Blender6.png", "https://i.postimg.cc/Y0Tp9rCp/Blender7.png"
@@ -142,7 +153,18 @@ export class ProjectsService {
         tags: [Tag.BLENDER, Tag.PHOTOSHOP] 
       },
       { 
-        id: 12, 
+        id: 13,
+        name: "Ejercicios de matematicas en Python.",
+        pictures: ["https://i.postimg.cc/vHTDhr8C/Python1.png", "https://i.postimg.cc/ncWrPXCr/Python2.png", "https://i.postimg.cc/T171Gw0k/Python3.png", "https://i.postimg.cc/3rnd2Shg/Python4.png",
+          "https://i.postimg.cc/FK5RhwbQ/Python5.png", "https://i.postimg.cc/s2Y2xKKG/Python6.png", "https://i.postimg.cc/0Q9ywmHW/Python7.png",  "https://i.postimg.cc/PxKrzxgt/Python8.png", "https://i.postimg.cc/j25q8TTy/Python9.png"
+        ], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/Programas-en-Python-de-Matematicas-1.git", 
+        summary: "Ejercicios de matemáticas codificados en Python utilizando el programa de Anaconda, y el IDE de Spyder.",
+        description: "Poner una descripción.", 
+        tags: [Tag.PYTHON, Tag.SPIDER] 
+      },
+      { 
+        id: 14, 
         name: "Lotería en Turbo C", 
         pictures: ["https://i.postimg.cc/MH3T87GC/Loteria1.png", "https://i.postimg.cc/qRLq1VHM/Loteria2.png", "https://i.postimg.cc/cCLHj9d7/Loteria3.png"], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0",
@@ -151,7 +173,7 @@ export class ProjectsService {
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
-        id: 13, 
+        id: 15, 
         name: "Registro académico en Turbo C", 
         pictures: ["https://i.postimg.cc/28MBgDM0/Registro-Academico1.png", "https://i.postimg.cc/yNz3YTV9/Registro-Academico2.png", "https://i.postimg.cc/j2j7YdRF/Registro-Academico3.png",
           "https://i.postimg.cc/ryh4CWJX/Registro-Academico4.png", "https://i.postimg.cc/KvRM9zqK/Registro-Academico5.png", "https://i.postimg.cc/7hQTH86Y/Registro-Academico6.png",
@@ -163,7 +185,7 @@ export class ProjectsService {
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
-        id: 14, 
+        id: 16, 
         name: "Pong en Turbo C", 
         pictures: [
           "https://i.postimg.cc/SsCYtLvD/Pong1.png", "https://i.postimg.cc/J73BNqJh/Pong2.png", "https://i.postimg.cc/T1cLTdGb/Pong3.png",
@@ -176,7 +198,7 @@ export class ProjectsService {
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
-        id: 15, 
+        id: 17, 
         name: "Geometría computacional en Turbo C", 
         pictures: ["https://i.postimg.cc/ZRYDPhxL/Geometria-Computacional1.png", "https://i.postimg.cc/257KB5h6/Geometria-Computacional2.png", "https://i.postimg.cc/Qd5PhmMc/Geometria-Computacional3.png", "https://i.postimg.cc/mrsnD9cJ/Geometria-Computacional4.png" ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Cierre-Convexo-C", 
@@ -185,7 +207,7 @@ export class ProjectsService {
         tags:  [Tag.C, Tag.TURBOC] 
        },
       { 
-        id: 16,
+        id: 18,
         name: "Aeropuerto en Turbo C", 
         pictures: ["https://i.postimg.cc/cHX1T0y1/Aeropuerto1.png", "https://i.postimg.cc/zvvzc68C/Aeropuerto2.png", "https://i.postimg.cc/KzZvn4Ws/Aeropuerto3.png", "https://i.postimg.cc/fyPznCR6/Aeropuerto4.png",
           "https://i.postimg.cc/7YCP1FBD/Aeropuerto5.png", "https://i.postimg.cc/QNYxT8J0/Aeropuerto6.png", "https://i.postimg.cc/QxR8ffP7/Aeropuerto7.png"
