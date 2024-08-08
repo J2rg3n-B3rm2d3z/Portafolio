@@ -7,10 +7,8 @@ import { Tag } from '../_models/Tag';
 })
 export class ProjectsService {
 
-  //this is the projects.
+  //This is the projects.
   //Image save in postimage 1280x720s
-  //Add some blender project? IDN
-  //Put Linux - Debian, Ubuntu projects and MADI and Python
 
   projects: Project[] =
     [
@@ -253,7 +251,7 @@ export class ProjectsService {
         }
       })
 
-      if (foundAll) { //if state true push to de filtered projects.
+      if (foundAll) { //If state true push to de filtered projects.
         filteredProjects.push(project);
       }
 

@@ -1,128 +1,128 @@
 /* Base gradient background for bubbles.  */
 
-.jumbotron{
-    padding: 2rem 1rem;
-    background: linear-gradient(to right, #9bb5ec, #6571ee);
-    overflow: hidden;
+.jumbotron {
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, #9bb5ec, #6571ee);
+  overflow: hidden;
 }
 
 /* Bubbles design. */
 
-.bubble{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background:  #fff;
-    opacity: .3;
+.bubble {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.3;
 
-    position: absolute;
-    bottom: -150;
-    left: 5%;
+  position: absolute;
+  bottom: -150;
+  left: 5%;
 
-    animation: bubbles 3s linear infinite ;
+  animation: bubbles 3s linear infinite;
 }
 
-.bubble:nth-child(1){
-    width: 15px;
-    height: 15px;
-    left: 15%;
-    animation-duration: 10s;
+.bubble:nth-child(1) {
+  width: 15px;
+  height: 15px;
+  left: 15%;
+  animation-duration: 10s;
 }
 
-.bubble:nth-child(2){
-    width: 100px;
-    height: 100px;
-    left: 30%;
-    animation-duration: 2s;
-} 
-
-.bubble:nth-child(3){
-    width: 30px;
-    height: 30px;
-    left: 45%;
-    animation-duration: 3s;
+.bubble:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 30%;
+  animation-duration: 2s;
 }
 
-.bubble:nth-child(4){
-    width: 40px;
-    height: 40px;
-    left: 10%;
-    animation-duration: 4s;
-} 
-
-.bubble:nth-child(5){
-    width: 50px;
-    height: 50px;
-    left: 60%;
-    animation-duration: 5s;
+.bubble:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  left: 45%;
+  animation-duration: 3s;
 }
 
-.bubble:nth-child(6){
-    width: 120px;
-    height: 120px;
-    left: 80%;
-    animation-duration: 6s;
-} 
-
-.bubble:nth-child(7){
-    width: 120px;
-    height: 120px;
-    left: 20%;
-    animation-duration: 7s;
+.bubble:nth-child(4) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 4s;
 }
 
-.bubble:nth-child(8){
-    width: 50px;
-    height: 50px;
-    left: 35%;
-    animation-duration: 8s;
-} 
-
-.bubble:nth-child(9){
-    width: 40px;
-    height: 40px;
-    left: 50%;
-    animation-duration: 9s;
+.bubble:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  left: 60%;
+  animation-duration: 5s;
 }
 
-.bubble:nth-child(10){
-    width: 30px;
-    height: 30px;
-    left: 5%;
-    animation-duration: 10s;
-} 
-
-.bubble:nth-child(11){
-    width: 100px;
-    height: 100px;
-    left: 90%;
-    animation-duration: 11s;
+.bubble:nth-child(6) {
+  width: 120px;
+  height: 120px;
+  left: 80%;
+  animation-duration: 6s;
 }
 
-.bubble:nth-child(12){
-    width: 15px;
-    height: 15px;
-    left: 85%;
-    animation-duration: 12s;
-} 
+.bubble:nth-child(7) {
+  width: 120px;
+  height: 120px;
+  left: 20%;
+  animation-duration: 7s;
+}
+
+.bubble:nth-child(8) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(9) {
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  animation-duration: 9s;
+}
+
+.bubble:nth-child(10) {
+  width: 30px;
+  height: 30px;
+  left: 5%;
+  animation-duration: 10s;
+}
+
+.bubble:nth-child(11) {
+  width: 100px;
+  height: 100px;
+  left: 90%;
+  animation-duration: 11s;
+}
+
+.bubble:nth-child(12) {
+  width: 15px;
+  height: 15px;
+  left: 85%;
+  animation-duration: 12s;
+}
 
 /* Animation bubbles. */
 
 @keyframes bubbles {
-    0%{
-        bottom: 0;
-        opacity: 0;
-    }
-    30%{
-        transform: translateX(50px);
-    }
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(50px);
+  }
 
-    50%{
-        opacity: .3;
-    }
+  50% {
+    opacity: 0.3;
+  }
 
-    100%{
-        bottom: 10vh;
-        opacity: 0;
-    }
+  100% {
+    bottom: 10vh;
+    opacity: 0;
+  }
 }

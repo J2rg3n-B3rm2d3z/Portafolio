@@ -51,8 +51,6 @@ export class Tag{
     static readonly IA = new Tag('IA','mediumvioletred');
     static readonly SPIDER = new Tag('Spyder', 'limegreen');
 
-    //Put Vmware
-
     private constructor(private readonly key: string, public readonly color: string){
 
     }
