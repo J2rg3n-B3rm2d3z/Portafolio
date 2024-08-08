@@ -10,7 +10,7 @@
             </button>
         </div>
         <br>
-        <div id="collapseBasic" [collapse]="isCollapse" [isAnimated]="true" style="text-align: justify">
+        <div id="collapseBasic" [collapse]="isCollapse" [isAnimated]="true">
             <div class="border mb-2 shadow-sm rounded" style="max-width: 500px; background-color: white;">
                 <form>
                     <div class="row mx-0">
@@ -273,16 +273,6 @@
                                 </div>
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input position-static me-2"
-                                        [(ngModel)]="redes" (change)="Filter()" name="Redes">
-                                    <label class="form-check-label small">Redes</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input position-static me-2"
-                                        [(ngModel)]="ia" (change)="Filter()" name="IA">
-                                    <label class="form-check-label small">IA</label>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input position-static me-2"
                                         [(ngModel)]="virtualbox" (change)="Filter()" name="Virtual Box">
                                     <label class="form-check-label small">Virtual Box</label>
                                 </div>
@@ -291,15 +281,27 @@
                                         [(ngModel)]="vmware" (change)="Filter()" name="VMware Workstation">
                                     <label class="form-check-label small">VMware Workstation</label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2"
+                                        [(ngModel)]="redes" (change)="Filter()" name="Redes">
+                                    <label class="form-check-label small">Redes</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input position-static me-2"
+                                        [(ngModel)]="ia" (change)="Filter()" name="IA">
+                                    <label class="form-check-label small">IA</label>
+                                </div>
+                                
                                 
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
+            <br>
         </div>
     </div>
-
+    
     <div class="row justify-content-center">
         <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4"
             style="max-width: 380px; min-width: 380px;">
