@@ -23,7 +23,7 @@ export class ProjectsService {
         projectlink: "https://github.com/stars/J2rg3n-B3rm2d3z/lists/central-optic", 
         summary: "Sistema de información web de control de inventario y facturación para la óptica \"Central Optic\".", 
         description: "Poner una descripción.", 
-        tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE,Tag.SQLSERVER, Tag.CSHARP, Tag.ASPNET, Tag.JWT, Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP, Tag.WORD, Tag.DRAWIO]
+        tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE,Tag.SQLSERVER, Tag.CSHARP, Tag.NETCORE, Tag.JWT, Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP, Tag.WORD, Tag.DRAWIO]
       },
       { 
         id: 1, 
@@ -33,7 +33,7 @@ export class ProjectsService {
         projectlink: "https://github.com/stars/J2rg3n-B3rm2d3z/lists/bambishop", 
         summary: "Prototipo de sistema de información web de control de ventas e inventario para el emprendimiento \"Bambishop\".",
         description: "Poner una descripción.", 
-        tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE, Tag.SQLSERVER, Tag.CSHARP, Tag.ASPNET, Tag.REACT, Tag.REDUX, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP,  Tag.PHOTOSHOP]
+        tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE, Tag.SQLSERVER, Tag.CSHARP, Tag.NETCORE, Tag.REACT, Tag.REDUX, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP,  Tag.PHOTOSHOP]
       },
       { 
         id: 2, 

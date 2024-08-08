@@ -8,7 +8,7 @@ export class Tag{
     static readonly CSHARP = new Tag('C#','darkmagenta');
     static readonly JAVA = new Tag('Java','orange');
     static readonly NODEJS = new Tag('Node.Js','olivedrab');
-    static readonly ASPNET = new Tag('ASP.NET','mediumpurple');
+    static readonly NETCORE = new Tag('NETCore','mediumpurple');
     static readonly JAVASCRIPT = new Tag('JavaScript','gold');
     static readonly REACT = new Tag('React','lightseagreen');
     static readonly ANDROIDSTUDIO = new Tag('Android Studio','darkolivegreen');

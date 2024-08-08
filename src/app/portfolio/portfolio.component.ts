@@ -36,7 +36,7 @@ export class PortfolioComponent implements OnInit {
 
   angular: boolean = false;
   nodejs: boolean = false;
-  aspnet: boolean = false;
+  netcore: boolean = false;
   react: boolean = false;
   bootstrap: boolean = false;
 
@@ -136,8 +136,8 @@ export class PortfolioComponent implements OnInit {
     if (this.nodejs) {
       filterTags.push(Tag.NODEJS)
     }
-    if (this.aspnet) {
-      filterTags.push(Tag.ASPNET)
+    if (this.netcore) {
+      filterTags.push(Tag.NETCORE)
     }
     if (this.react) {
       filterTags.push(Tag.REACT)
@@ -260,7 +260,7 @@ export class PortfolioComponent implements OnInit {
 
       this.angular ||
       this.nodejs ||
-      this.aspnet ||
+      this.netcore ||
       this.react ||
       this.bootstrap ||
 
@@ -327,7 +327,7 @@ export class PortfolioComponent implements OnInit {
 
     this.angular = false;
     this.nodejs = false;
-    this.aspnet = false;
+    this.netcore = false;
     this.react = false;
     this.bootstrap = false;
 
