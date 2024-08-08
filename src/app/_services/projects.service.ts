@@ -115,7 +115,7 @@ export class ProjectsService {
           "https://i.postimg.cc/PqgyLBrS/Simulador5.png", "https://i.postimg.cc/tTF5F2sp/Simulador6.png", "https://i.postimg.cc/d3v96rCd/Simulador7.png", "https://i.postimg.cc/hvr15v8Y/Simulador8.png", "https://i.postimg.cc/05dnQXgC/Simulador9.png"
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Simulador", 
-        summary: "Aplicación para escritorio de un simulador de la arquitectura ensamblador de registros de 2 direcciones.", 
+        summary: "Aplicación para escritorio de un simulador del prototipo de una arquitectura ensamblador de registros de 2 direcciones.", 
         description: "Poner una descripción.", 
         tags: [Tag.VISUALSTUDIO, Tag.CSHARP, Tag.WPF, Tag.XML] 
       },
