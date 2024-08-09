@@ -20,7 +20,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://github.com/stars/J2rg3n-B3rm2d3z/lists/central-optic", 
         summary: "Sistema de información web de control de inventario y facturación para la óptica \"Central Optic\".", 
-        description: "Poner una descripción.", 
+        description: "Sistema de inventario y facturación desarrollado para la microempresa “Central Optic”, donde se maneja el control de la información de los clientes, los empleados, los usuarios del propio sistema, los proveedores, los laboratorios, las facturas con sus pagos, los exámenes realizados, la administración de sus productos y los pedidos para la realización de los lentes, además de tener un apartado de reportes personalizados. Este es un proyecto que se ha estado trabajando en equipo a lo largo de diversos cursos universitarios, siguiendo la línea de la carrera de desarrollo de software, desde la creación de la base de datos hasta el lanzamiento de manera virtualizada.", 
         tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE,Tag.SQLSERVER, Tag.CSHARP, Tag.NETCORE, Tag.JWT, Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP, Tag.WORD, Tag.DRAWIO]
       },
       { 
@@ -30,7 +30,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://github.com/stars/J2rg3n-B3rm2d3z/lists/bambishop", 
         summary: "Prototipo de sistema de información web de control de ventas e inventario para el emprendimiento \"Bambishop\".",
-        description: "Poner una descripción.", 
+        description: "Prototipo de un sistema de información web de control de ventas e inventario para el emprendimiento \"Bambishop\". En este caso se intentó desarrollar un sistema donde solo se lleve el control de la información de los clientes, las facturas, los productos y los proveedores. Este es un proyecto personal, donde se pone en práctica los conocimientos adquiridos en la universidad y de cursos apartes para el uso de tecnologías como React. Si bien el proyecto llegó tener ciertos avances, debido a la falta de disponibilidad de tiempo no se llegó a continuar.", 
         tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE, Tag.SQLSERVER, Tag.CSHARP, Tag.NETCORE, Tag.REACT, Tag.REDUX, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP,  Tag.PHOTOSHOP]
       },
       { 
@@ -39,7 +39,7 @@ export class ProjectsService {
         pictures: ["https://i.postimg.cc/5yc4PQcq/ShoList4.png", "https://i.postimg.cc/Bv4Rgb9d/ShoList1.png", "https://i.postimg.cc/52wZLvGB/ShoList2.png", "https://i.postimg.cc/FFPGJb4L/ShoList6.png", "https://i.postimg.cc/Jhxvd8Rt/ShoList3.png", "https://i.postimg.cc/m2tj3cL6/ShoList5.png"], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/ShoList", 
         summary: "Aplicación para móviles android con el proposito de llevar el control de las listas de compras.", 
-        description: "Esta es una aplicación para móviles Android desarrollado en Java. En ella se puede crear, modificar y eliminar listas de compras para cualquier fin en específico. Esta aplicación puede ser utilizada para crear un presupuesto de las compras que se están por realizar, y también para llevar un historial de gastos de estas mismas.", 
+        description: "Aplicación para móviles Android desarrollado en Java. En ella se puede crear, modificar y eliminar listas de compras para cualquier fin en específico. Esta aplicación puede ser utilizada para crear un presupuesto de las compras que se están por realizar, y también para llevar un historial de gastos de estas mismas. Este software se desarrolló para poner en práctica lo aprendido en el lenguaje de Java y para dar una solución sencilla para las personas que suelen llevar en papel las listas de compras. Si bien ya es una app funcional, aun no se ha publicado en alguna plataforma de distribución.", 
         tags: [Tag.ANDROIDSTUDIO, Tag.JAVA, Tag.SQLITE, Tag.XML, Tag.PHOTOSHOP] 
       },
       { 
@@ -50,7 +50,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/FinalProject", 
         summary: "Prototipo de aplicación colaborativa para móviles Android con el fin de mostrar ATMs cercanos, indicando si estos estan vacíos o no.", 
-        description: "Poner una descripción.", 
+        description: "Prototipo de aplicación colaborativa para móviles Android con el fin de mostrar ATMs cercanos, indicando si estos están vacíos o no. Esta aplicación fue desarrollada como proyecto de curso en la clase de \"Programación gráfica\", aplicando los conocimientos adquiridos en el lenguaje de Kotlin y el uso de Firebase como base de datos. En este proyecto se propone el uso colaborativo de la App por parte de los usuarios para que ellos mismos indiquen que cajeros automáticos pueden tener o no efectivo, ayudando a los demás a no perder tiempo al momento de ir a algún cajero en específico.", 
         tags: [Tag.ANDROIDSTUDIO, Tag.KOTLIN, Tag.FIREBASE, Tag.XML, Tag.PHOTOSHOP] 
       },
       { 
@@ -61,7 +61,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://drive.google.com/file/d/1zmSRSlgmVeXlYTkTDV_R_305M7O7vz0X/view?usp=sharing", 
         summary: "Estudio de factibilidad de un sistema de información web de prescripciones medicas para clínicas dermatológicas.", 
-        description: "Poner una descripción.", 
+        description: "Estudio de factibilidad para la creación de un sistema de información web de prescripciones medicas para clínicas dermatológicas, donde se lleva el control de la información básica de las clínicas que lo utilicen, como los empleados, los usuarios del sistema, sus pacientes y las prescripciones realizadas, manteniendo un control digital de estas. Este es un documento donde se mira el diseño del sistema, junto con sus requerimientos y costos, mostrando los posibles riesgos de la puesta en marcha del proyecto, y concluyendo con una propuesta para el desarrollo. Esto fue un proyecto de final de curso en la clase de \"Economía de proyectos informáticos\".", 
         tags: [Tag.WORD, Tag.EXCEL, Tag.PROJECT, Tag.DRAWIO, Tag.FIGMA, Tag.PHOTOSHOP]
       },
       { 
@@ -71,8 +71,8 @@ export class ProjectsService {
           "https://i.postimg.cc/RC8sJX8h/Aso5.png", "https://i.postimg.cc/m2HdY7fw/Aso6.png"
         ], 
         projectlink: "https://drive.google.com/file/d/1F_lRjrg-p40XeJzvgukIchmKBivI2gPJ/view?usp=sharing", 
-        summary: "Modificación de la pantalla de arranque, creación del prototipo de un driver y configuración de servicios en la red, en la distribución de Kali Linux.", 
-        description: "Poner una descripción.", 
+        summary: "Modificación de la pantalla de arranque, creación del prototipo de un driver y configuración de servicios en la red en la distribución de Kali Linux.", 
+        description: "Proyecto de curso en la clase de \"Arquitectura de sistemas operativos\", en el cual consistía modificar el kernel de una distribución de Linux, en este caso Kali Linux, mostrando la información de los integrantes del equipo en la pantalla de arranque, cambiando la imagen del GRUB por una foto de los integrantes de grupo y creando un prototipo de un driver en esta distribución. Finalizando con la instalación y configuración de los servicios FTP y VoIP, esto con el fin de demostrar la funcionalidad del sistema operativo ya una vez que los cambios se hayan realizado.", 
         tags: [Tag.LINUX, Tag.C, Tag.KALILINUX, Tag.WORD, Tag.REDES]
       },
       { 
@@ -83,7 +83,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://drive.google.com/file/d/1t4vpxbE8hjQscTIXnhx4yltX9BK68ct7/view?usp=sharing", 
         summary: "Configuración de servicios en la red de DNS, DHCP, Web, Correo electrónico, FTP, VoIP y Streaming en la distribución de Kali Linux.", 
-        description: "Poner una descripción.", 
+        description: "Proyecto de curso en la clase de \"Redes de computadoras\", en el cual consistía instalar y configurar los servicios de DNS, DHCP, Web, Correo electrónico, FTP, VoIP y Streaming en una distribución de Linux, en este caso Kali Linux. Se realizó los cálculos de red para la cantidad de direcciones que se pueden utilizar en los dispositivos finales, y se usó y configuró un router como dispositivo intermedio, dando como resultado el correcto funcionamiento de los servicios en la red aplicando el modelo cliente-servidor.", 
         tags: [Tag.LINUX, Tag.KALILINUX, Tag.WORD, Tag.REDES]
       },
       { 
@@ -94,7 +94,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://drive.google.com/drive/folders/17kMaqlKVwRehi3qLJgwuC1NQ5ERrYzGP?usp=sharing", 
         summary: "Configuración de servicios en la red virtualizada de DNS, DHCP, Active Directory, Web, y FTP en Windows Server.", 
-        description: "Poner una descripción.", 
+        description: "Laboratorios realizados en la clase de \"Redes de computadoras\", en el cual consistía crear una red virtual con Windows Server como servidor y dos clientes Windows 7. Los servicios que se configuraron fueron: DNS, DHCP, Active Directory, Web y FTP. Se realizó los cálculos de red para la cantidad de direcciones que se pueden utilizar en los dispositivos finales, y se configuró la red virtual entre las máquinas. La documentación de este proyecto se dividió en dos partes, el primer documento explica la configuración de DNS, DHCP y Active Directory, y el segundo explica la configuración del servicio Web y FTP.", 
         tags: [Tag.WINDOWSSERVER, Tag.WORD, Tag.REDES, Tag.VIRTUALBOX]
       },
       { 
@@ -103,7 +103,7 @@ export class ProjectsService {
         pictures: ["https://i.postimg.cc/8CRh2XCK/IA1.png", "https://i.postimg.cc/3R3gYj4K/IA2.png", "https://i.postimg.cc/d0P2ScJZ/IA3.png"], 
         projectlink: "https://colab.research.google.com/drive/1yN0gAC1Qyozqyi_L5Cw93vYpV_BBweGE?usp=sharing", 
         summary: "Desarrollo del prototipo de una red neuronal convolucional con la base de datos de imágenes Cifar10.", 
-        description: "Poner una descripción.", 
+        description: "Código del prototipo de una red neuronal convolucional realizado en la clase de \"Inteligencia artificial\", donde se usa una base de datos de imágenes de 32x32 provenientes de la librería de Cifar10. En este código se utiliza dicha base de datos para entrenar la red neuronal con el 70% de las imágenes y probarla con el 30%, generando una matriz de confusión el cual muestra la exactitud del modelo propuesto.", 
         tags: [Tag.PYTHON, Tag.GOOGLECOLAB, Tag.IA]
       },
       { 
@@ -113,8 +113,8 @@ export class ProjectsService {
           "https://i.postimg.cc/PqgyLBrS/Simulador5.png", "https://i.postimg.cc/tTF5F2sp/Simulador6.png", "https://i.postimg.cc/d3v96rCd/Simulador7.png", "https://i.postimg.cc/hvr15v8Y/Simulador8.png", "https://i.postimg.cc/05dnQXgC/Simulador9.png"
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Simulador", 
-        summary: "Aplicación para escritorio de un simulador del prototipo de una arquitectura ensamblador de registros de 2 direcciones.", 
-        description: "Poner una descripción.", 
+        summary: "Aplicación para escritorio de un simulador de una arquitectura ensamblador de registros de 2 direcciones.", 
+        description: "Aplicación para escritorio de un simulador de una arquitectura ensamblador de registros de 2 direcciones, realizado en la clase de \"Arquitectura de máquinas computadoras II\". En esta aplicación se puso en práctica los conocimientos aprendidos a lo largo del curso, por medio del lenguaje de C#. Se muestra paso a paso el funcionamiento de una arquitectura de registros de 2 direcciones, desde ensamblar el código, hasta ejecutarlo, trayendo las instrucciones desde la memoria, realizando los cálculos en la ALU y pudiendo interactuar con dispositivos de entrada y salida.", 
         tags: [Tag.VISUALSTUDIO, Tag.CSHARP, Tag.WPF, Tag.XML] 
       },
       { 
@@ -125,7 +125,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://drive.google.com/file/d/1-rYx55FSEEmBQRI_ixSfWlndmYQ3ojPo/view?usp=sharing", 
         summary: "Configuración de servicios en la red virtualizada de DNS, Web, Correo electrónico, Samba, FTP y SSH en Ubuntu.",
-        description: "Poner una descripción.", 
+        description: "Proyecto de curso en la clase de \"Sistemas operativos y redes\", en el cual consistía instalar y configurar los servicios de DNS, Web, Correo electrónico, Samba, FTP y SSH, en una red virtual utilizando una distribución de Linux, en este caso Ubuntu, verificando su correcto funcionamiento tanto en dispositivos móviles como en laptops.", 
         tags: [Tag.VMWAREWORKSTATION, Tag.LINUX, Tag.UBUNTU, Tag.WORD, Tag.REDES] 
       },
       { 
@@ -136,7 +136,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://drive.google.com/drive/folders/1EW86A1rSEm1Hcf2Sfbe8ZXucqz79IMev?usp=sharing", 
         summary: "Documentación de ejercicios prácticos de comandos en el shell de Linux utilizando la distribución de Debian.",
-        description: "Poner una descripción.", 
+        description: "Laboratorios realizados a lo largo del curso de \"Sistemas operativos y redes\", donde se pone en practica el uso del shell de Linux y los diferentes aditamentos de este sistema operativo, siendo Debian la distribución utilizada para completar dichos laboratorios. Desde la creación de usuarios en la línea de comando, hasta la creación de scripts.", 
         tags: [Tag.VMWAREWORKSTATION, Tag.LINUX, Tag.DEBIAN,  Tag.WORD] 
       },
       { 
@@ -147,7 +147,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://drive.google.com/drive/folders/1CMqaVsnJhHRAvootUEAK9nsURiRGOjRr?usp=sharing", 
         summary: "Modelados en 3D realizados en el software de blender, aplicando texturas, addons, nodos geométricos, nodos de texturas, etc.",
-        description: "Poner una descripción.", 
+        description: "Modelos y animaciones realizadas a lo largo de la clase de \"Aplicaciones gráficas\", aplicando los conocimientos adquiridos de texturización, addons, nodos geométricos, nodos de texturas, deformaciones, atajos de teclados, etc.", 
         tags: [Tag.BLENDER, Tag.PHOTOSHOP] 
       },
       { 
@@ -158,7 +158,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Programas-en-Python-de-Matematicas-1.git", 
         summary: "Ejercicios de matemáticas codificados en Python utilizando el programa de Anaconda, y el IDE de Spyder.",
-        description: "Poner una descripción.", 
+        description: "Códigos realizados como laboratorios en la clase de \"Matemáticas I para computación\", donde se utiliza el lenguaje de Python, con el IDE de Spyder y la distribución de Anaconda. En estos programas se utiliza la librería de Sympy para la resolución de derivadas e integrales, junto con la librería de Matplotlib y numpy para la representación gráfica.", 
         tags: [Tag.PYTHON, Tag.SPIDER] 
       },
       { 
@@ -167,7 +167,7 @@ export class ProjectsService {
         pictures: ["https://i.postimg.cc/MH3T87GC/Loteria1.png", "https://i.postimg.cc/qRLq1VHM/Loteria2.png", "https://i.postimg.cc/cCLHj9d7/Loteria3.png"], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0",
         summary: "Programación de un juego de lotería en el emulador de DOSBOX utilizando Turbo C.", 
-        description: "Poner una descripción.", 
+        description: "Programa realizado en el emulador de Dosbox utilizando Turbo C en la clase de \"Lenguajes de programación\". En este caso se utilizó el modo texto para realizar un juego de lotería, en el cual se le da al usuario la opción de ver la presentación, escoger un número, comenzar a jugar, volver a jugar o salir del programa.", 
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
@@ -179,7 +179,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0", 
         summary: "Programación de un sistema de registro académico en el emulador de DOSBOX utilizando Turbo C.", 
-        description: "Poner una descripción.", 
+        description: "Programa realizado en el emulador de Dosbox utilizando Turbo C en la clase de \"Lenguajes de programación\". En este caso se utilizó el modo texto para realizar un sistema de registro académico, haciendo uso de ficheros de textos y binarios, permitiendo agregar un alumno, editar su información personal y sus notas, y agregar o dar de baja clases del semestre.", 
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
@@ -192,7 +192,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0", 
         summary: "Programación de un juego de Pong en el emulador de DOSBOX utilizando Turbo C por medio de sus primitivas graficas.", 
-        description: "Poner una descripción.", 
+        description: "Proyecto de fin de curso realizado en el emulador de Dosbox utilizando Turbo C en la clase de \"Lenguajes de programación\". En este caso se utilizó las primitivas graficas para realizar un juego de Pong, teniendo una pantalla principal, una pantalla de presentación, la pantalla de selección de juego, una ayuda, registros de las personas que jugaron y mejores puntuaciones en el juego. ", 
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
@@ -201,7 +201,7 @@ export class ProjectsService {
         pictures: ["https://i.postimg.cc/ZRYDPhxL/Geometria-Computacional1.png", "https://i.postimg.cc/257KB5h6/Geometria-Computacional2.png", "https://i.postimg.cc/Qd5PhmMc/Geometria-Computacional3.png", "https://i.postimg.cc/mrsnD9cJ/Geometria-Computacional4.png" ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Cierre-Convexo-C", 
         summary: "Programación de tres algoritmos de cierres convexos y un algoritmo para realizar un diagrama de Voronoi, en el emulador de DOSBOX utilizando Turbo C por medio de sus primitivas graficas.", 
-        description: "Poner una descripción.", 
+        description: "Programas realizados en el emulador de Dosbox utilizando Turbo C en la clase de \"Geometría computacional\". Se realizó 3 algoritmos de cierres convexos en lenguaje C, siendo el primer algoritmo de Gift Wrapping, el segundo de Graham Scan y el tercero de Quick Hull, además se hizo un codigo de barrido para la creación de diagramas de Voronoi.", 
         tags:  [Tag.C, Tag.TURBOC] 
        },
       { 
@@ -212,7 +212,7 @@ export class ProjectsService {
         ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Aeropuerto-Turbo-C", 
         summary: "Programación de una simulación de la cabina de un aeropuerto en el emulador de DOSBOX utilizando Turbo C por medio de sus primitivas graficas.",
-        description: "Poner una descripción.", 
+        description: "Programa realizado en el emulador de Dosbox utilizando Turbo C en la clase de \"Geometría computacional\". Se realizo un simulador de una cabina de un aeropuerto en lenguaje C por medio de las primitivas gráficas. En esta simulación, se ingresa el registro del boleto del avión indicando al país al que va, se simula el despeje del avión y se monitorea el transcurso del viaje hasta llegar a su destino, y por último se da la opción de ver el registro de salida y llegada de los aviones.", 
         tags: [Tag.C, Tag.TURBOC] 
       }
     ]
