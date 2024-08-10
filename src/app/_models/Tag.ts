@@ -42,7 +42,6 @@ export class Tag{
     static readonly WORD = new Tag('Word','steelblue');
     static readonly PROJECT = new Tag('Project','seagreen');
     static readonly EXCEL = new Tag('Excel','darkgreen');
-
     static readonly REDES = new Tag('Redes','darkgreen');
     static readonly XML = new Tag('Xml','darkgreen');
     static readonly VIRTUALBOX = new Tag('Virtual box','cornflowerblue');

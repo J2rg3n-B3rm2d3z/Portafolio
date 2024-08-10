@@ -26,15 +26,23 @@ export class ProjectsService {
       { 
         id: 1, 
         name: "Bambishop",
-        pictures: ["https://i.postimg.cc/QdVNKn6T/Bambishop1.png", "https://i.postimg.cc/sDTDXRJz/Bambishop2.png", "https://i.postimg.cc/WbN1T4gS/Bambishop3.png", "https://i.postimg.cc/Pfz5gDpP/Bambishop4.png"
-        ], 
+        pictures: ["https://i.postimg.cc/QdVNKn6T/Bambishop1.png", "https://i.postimg.cc/sDTDXRJz/Bambishop2.png", "https://i.postimg.cc/WbN1T4gS/Bambishop3.png", "https://i.postimg.cc/Pfz5gDpP/Bambishop4.png"], 
         projectlink: "https://github.com/stars/J2rg3n-B3rm2d3z/lists/bambishop", 
         summary: "Prototipo de sistema de información web de control de ventas e inventario para el emprendimiento \"Bambishop\".",
         description: "Prototipo de un sistema de información web de control de ventas e inventario para el emprendimiento \"Bambishop\". En este caso se intentó desarrollar un sistema donde solo se lleve el control de la información de los clientes, las facturas, los productos y los proveedores. Este es un proyecto personal, donde se pone en práctica los conocimientos adquiridos en la universidad y de cursos apartes para el uso de tecnologías como React. Si bien el proyecto llegó tener ciertos avances, debido a la falta de disponibilidad de tiempo no se llegó a continuar.", 
         tags: [ Tag.SQLSERVERMANAGEMENT, Tag.VISUALSTUDIO, Tag.VISUALSTUDIOCODE, Tag.SQLSERVER, Tag.CSHARP, Tag.NETCORE, Tag.REACT, Tag.REDUX, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS, Tag.BOOTSTRAP,  Tag.PHOTOSHOP]
       },
       { 
-        id: 2, 
+        id: 2,
+        name: "Portafolio", 
+        pictures: ["https://i.postimg.cc/P5ZW3X1v/Portafolio1.png","https://i.postimg.cc/NfK7X7M4/Portafolio2.png","https://i.postimg.cc/HsF09c8C/Portafolio3.png","https://i.postimg.cc/wxfQ3b6M/Portafolio4.png","https://i.postimg.cc/vmsWCJvq/Portafolio6.png","https://i.postimg.cc/GpxkRX7c/Portafolio7.png"], 
+        projectlink: "https://github.com/J2rg3n-B3rm2d3z/Portafolio.git", 
+        summary: "Página web programada para demostrar información relevante respecto al portafolio de habilidades y tecnologías aprendidas a lo largo de la carrera.",
+        description: "Página web programada en Angular con HTML, CSS y Typescript, con el fin de realizar un portafolio visual para las personas interesadas en saber acerca de mi curriculum. La página tiene la sección de inicio que muestra de manera general la información, se muestra en otra sección la educación que se ha recibido, se tiene una sección de tecnologías donde se puede observar las herramientas que se manejan, se muestran proyectos en los que se ha trabajado, y por último la información de contacto.", 
+        tags: [ Tag.VISUALSTUDIOCODE, Tag.ANGULAR, Tag.BOOTSTRAP, Tag.TYPESCRIPT, Tag.HTML, Tag.CSS ] 
+      },
+      { 
+        id: 3, 
         name: "ShoList", 
         pictures: ["https://i.postimg.cc/5yc4PQcq/ShoList4.png", "https://i.postimg.cc/Bv4Rgb9d/ShoList1.png", "https://i.postimg.cc/52wZLvGB/ShoList2.png", "https://i.postimg.cc/FFPGJb4L/ShoList6.png", "https://i.postimg.cc/Jhxvd8Rt/ShoList3.png", "https://i.postimg.cc/m2tj3cL6/ShoList5.png"], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/ShoList", 
@@ -43,7 +51,7 @@ export class ProjectsService {
         tags: [Tag.ANDROIDSTUDIO, Tag.JAVA, Tag.SQLITE, Tag.XML, Tag.PHOTOSHOP] 
       },
       { 
-        id: 3, 
+        id: 4, 
         name: "Bekind", 
         pictures: ["https://i.postimg.cc/SN08MfrZ/Bekind1.png", "https://i.postimg.cc/65dZL4bB/Bekind2.png", "https://i.postimg.cc/13sqWRbw/Bekind3.png", "https://i.postimg.cc/13BNbhZT/Bekind4.png",
           "https://i.postimg.cc/XvvybHjv/Bekind5.png", "https://i.postimg.cc/JhdH4N05/Bekind6.png"
@@ -54,7 +62,7 @@ export class ProjectsService {
         tags: [Tag.ANDROIDSTUDIO, Tag.KOTLIN, Tag.FIREBASE, Tag.XML, Tag.PHOTOSHOP] 
       },
       { 
-        id: 4, 
+        id: 5, 
         name: "Skin Medical Prescribe",
         pictures: ["https://i.postimg.cc/bJssX1C7/Skin1.png", "https://i.postimg.cc/rs4ssMLg/Skin2.png", "https://i.postimg.cc/fLpkMk1J/Skin3.png", "https://i.postimg.cc/CMnzmHfD/Skin4.png",
           "https://i.postimg.cc/RVcqzSdZ/Skin5.png", "https://i.postimg.cc/HsGjKcQN/Skin6.png", "https://i.postimg.cc/8zNcp2XB/Skin7.png", "https://i.postimg.cc/SxdsJgw0/Skin8.png", "https://i.postimg.cc/BvvvDx0j/Skin9.png"
@@ -65,7 +73,7 @@ export class ProjectsService {
         tags: [Tag.WORD, Tag.EXCEL, Tag.PROJECT, Tag.DRAWIO, Tag.FIGMA, Tag.PHOTOSHOP]
       },
       { 
-        id: 5, 
+        id: 6, 
         name: "Modificación de kernel en Kali Linux.",
         pictures: ["https://i.postimg.cc/zBGtKM8b/Aso1.png", "https://i.postimg.cc/nrs3wDsn/Aso2.png", "https://i.postimg.cc/RFpPRRZP/Aso3.png", "https://i.postimg.cc/1XLvx36w/Aso4.png",
           "https://i.postimg.cc/RC8sJX8h/Aso5.png", "https://i.postimg.cc/m2HdY7fw/Aso6.png"
@@ -76,7 +84,7 @@ export class ProjectsService {
         tags: [Tag.LINUX, Tag.C, Tag.KALILINUX, Tag.WORD, Tag.REDES]
       },
       { 
-        id: 6, 
+        id: 7, 
         name: "Configuración de servicios de red en Kali Linux.",
         pictures: ["https://i.postimg.cc/252Tkwhz/Redes1.png", "https://i.postimg.cc/zfJ0YMLt/Redes2.png", "https://i.postimg.cc/Px74Z5S9/Redes3.png", "https://i.postimg.cc/SsRdJMfc/Redes4.png",
           "https://i.postimg.cc/fknf2gnv/Redes5.png", "https://i.postimg.cc/ZnyLLzgR/Redes6.png", "https://i.postimg.cc/fWt4PtQ3/Redes7.png", "https://i.postimg.cc/05Tg1k9V/Redes8.png", "https://i.postimg.cc/Jz89tpDJ/Redes9.png", "https://i.postimg.cc/9FZ6W6MC/Redes10.png"
@@ -87,7 +95,7 @@ export class ProjectsService {
         tags: [Tag.LINUX, Tag.KALILINUX, Tag.WORD, Tag.REDES]
       },
       { 
-        id: 7, 
+        id: 8, 
         name: "Configuración de servicios de red en Windows Server.",
         pictures: ["https://i.postimg.cc/6phFZCnP/Windows1.png", "https://i.postimg.cc/fLVP1Fp4/Windows2.png", "https://i.postimg.cc/HLsR9jtk/Windows3.png", "https://i.postimg.cc/SKT5TqZ7/Windows4.png",
           "https://i.postimg.cc/Fsy6t0WK/Windows5.png", "https://i.postimg.cc/x1gF8nSD/Windows6.png", "https://i.postimg.cc/nLzSQgHs/Windows7.png", "https://i.postimg.cc/Gmb5b9Vx/Windows8.png", "https://i.postimg.cc/ZqM7PHRw/Windows9.png", "https://i.postimg.cc/zBHdxhH8/Windows10.png"
@@ -98,7 +106,7 @@ export class ProjectsService {
         tags: [Tag.WINDOWSSERVER, Tag.WORD, Tag.REDES, Tag.VIRTUALBOX]
       },
       { 
-        id: 8, 
+        id: 9, 
         name: "Red Convolucional con Cifar10",
         pictures: ["https://i.postimg.cc/8CRh2XCK/IA1.png", "https://i.postimg.cc/3R3gYj4K/IA2.png", "https://i.postimg.cc/d0P2ScJZ/IA3.png"], 
         projectlink: "https://colab.research.google.com/drive/1yN0gAC1Qyozqyi_L5Cw93vYpV_BBweGE?usp=sharing", 
@@ -107,7 +115,7 @@ export class ProjectsService {
         tags: [Tag.PYTHON, Tag.GOOGLECOLAB, Tag.IA]
       },
       { 
-        id: 9, 
+        id: 10, 
         name: "Simulador de ensamblador",
         pictures: ["https://i.postimg.cc/bwF3PGXc/Simulador1.png", "https://i.postimg.cc/MK59sPdG/Simulador2.png", "https://i.postimg.cc/y8Nv2mby/Simulador3.png", "https://i.postimg.cc/g0X42Ydw/Simulador4.png",
           "https://i.postimg.cc/PqgyLBrS/Simulador5.png", "https://i.postimg.cc/tTF5F2sp/Simulador6.png", "https://i.postimg.cc/d3v96rCd/Simulador7.png", "https://i.postimg.cc/hvr15v8Y/Simulador8.png", "https://i.postimg.cc/05dnQXgC/Simulador9.png"
@@ -118,7 +126,7 @@ export class ProjectsService {
         tags: [Tag.VISUALSTUDIO, Tag.CSHARP, Tag.WPF, Tag.XML] 
       },
       { 
-        id: 10,
+        id: 11,
         name: "Configuración de servicios de red en Ubuntu.",
         pictures: ["https://i.postimg.cc/QMcz506p/Ubuntu1.png", "https://i.postimg.cc/sXyNJ78b/Ubuntu2.png", "https://i.postimg.cc/pTZ1cyMr/Ubuntu3.png", "https://i.postimg.cc/tJ4vKy95/Ubuntu4.png",
           "https://i.postimg.cc/brVV8MJj/Ubuntu5.png", "https://i.postimg.cc/dtDSnqHQ/Ubuntu6.png", "https://i.postimg.cc/KvVpHdwP/Ubuntu7.png",  "https://i.postimg.cc/T2t4rycH/Ubuntu8.png", "https://i.postimg.cc/P5wVsSnB/Ubuntu9.png", "https://i.postimg.cc/5t5Pjj0g/Ubuntu10.png"
@@ -129,7 +137,7 @@ export class ProjectsService {
         tags: [Tag.VMWAREWORKSTATION, Tag.LINUX, Tag.UBUNTU, Tag.WORD, Tag.REDES] 
       },
       { 
-        id: 11, 
+        id: 12, 
         name: "Ejercicios de shell en Linux", 
         pictures: ["https://i.postimg.cc/jq3973QJ/Debian1.png", "https://i.postimg.cc/3Rnq9nsV/Debian2.png", "https://i.postimg.cc/D00MN1FZ/Debian3.png", "https://i.postimg.cc/cCzbG64c/Debian4.png",
           "https://i.postimg.cc/0264dGcX/Debian5.png", "https://i.postimg.cc/K8BsCGXn/Debian6.png", "https://i.postimg.cc/bNKB6G5y/Debian7.png", "https://i.postimg.cc/CK06g3Y9/Debian8.png", "https://i.postimg.cc/W47Yb51z/Debian9.png", "https://i.postimg.cc/pTXG9KmZ/Debian10.png"
@@ -140,7 +148,7 @@ export class ProjectsService {
         tags: [Tag.VMWAREWORKSTATION, Tag.LINUX, Tag.DEBIAN,  Tag.WORD] 
       },
       { 
-        id: 12, 
+        id: 13, 
         name: "Modelados en Blender", 
         pictures: ["https://i.postimg.cc/tCLTR5sh/Blender1.png", "https://i.postimg.cc/6qq3qbVh/Blender2.png", "https://i.postimg.cc/T2N1FGGN/Blender3.png", "https://i.postimg.cc/NfyFwVjs/Blender4.png",
           "https://i.postimg.cc/pdBXZMqZ/Blender5.png", "https://i.postimg.cc/qRMBDDFd/Blender6.png", "https://i.postimg.cc/Y0Tp9rCp/Blender7.png"
@@ -151,7 +159,7 @@ export class ProjectsService {
         tags: [Tag.BLENDER, Tag.PHOTOSHOP] 
       },
       { 
-        id: 13,
+        id: 14,
         name: "Ejercicios de matematicas en Python.",
         pictures: ["https://i.postimg.cc/vHTDhr8C/Python1.png", "https://i.postimg.cc/ncWrPXCr/Python2.png", "https://i.postimg.cc/T171Gw0k/Python3.png", "https://i.postimg.cc/3rnd2Shg/Python4.png",
           "https://i.postimg.cc/FK5RhwbQ/Python5.png", "https://i.postimg.cc/s2Y2xKKG/Python6.png", "https://i.postimg.cc/0Q9ywmHW/Python7.png",  "https://i.postimg.cc/PxKrzxgt/Python8.png", "https://i.postimg.cc/j25q8TTy/Python9.png"
@@ -162,7 +170,7 @@ export class ProjectsService {
         tags: [Tag.PYTHON, Tag.SPIDER] 
       },
       { 
-        id: 14, 
+        id: 15, 
         name: "Lotería en Turbo C", 
         pictures: ["https://i.postimg.cc/MH3T87GC/Loteria1.png", "https://i.postimg.cc/qRLq1VHM/Loteria2.png", "https://i.postimg.cc/cCLHj9d7/Loteria3.png"], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Turboc-2.0",
@@ -171,7 +179,7 @@ export class ProjectsService {
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
-        id: 15, 
+        id: 16, 
         name: "Registro académico en Turbo C", 
         pictures: ["https://i.postimg.cc/28MBgDM0/Registro-Academico1.png", "https://i.postimg.cc/yNz3YTV9/Registro-Academico2.png", "https://i.postimg.cc/j2j7YdRF/Registro-Academico3.png",
           "https://i.postimg.cc/ryh4CWJX/Registro-Academico4.png", "https://i.postimg.cc/KvRM9zqK/Registro-Academico5.png", "https://i.postimg.cc/7hQTH86Y/Registro-Academico6.png",
@@ -183,7 +191,7 @@ export class ProjectsService {
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
-        id: 16, 
+        id: 17, 
         name: "Pong en Turbo C", 
         pictures: [
           "https://i.postimg.cc/SsCYtLvD/Pong1.png", "https://i.postimg.cc/J73BNqJh/Pong2.png", "https://i.postimg.cc/T1cLTdGb/Pong3.png",
@@ -196,7 +204,7 @@ export class ProjectsService {
         tags: [Tag.C, Tag.TURBOC] 
       },
       { 
-        id: 17, 
+        id: 18, 
         name: "Geometría computacional en Turbo C", 
         pictures: ["https://i.postimg.cc/ZRYDPhxL/Geometria-Computacional1.png", "https://i.postimg.cc/257KB5h6/Geometria-Computacional2.png", "https://i.postimg.cc/Qd5PhmMc/Geometria-Computacional3.png", "https://i.postimg.cc/mrsnD9cJ/Geometria-Computacional4.png" ], 
         projectlink: "https://github.com/J2rg3n-B3rm2d3z/Cierre-Convexo-C", 
@@ -205,7 +213,7 @@ export class ProjectsService {
         tags:  [Tag.C, Tag.TURBOC] 
        },
       { 
-        id: 18,
+        id: 19,
         name: "Aeropuerto en Turbo C", 
         pictures: ["https://i.postimg.cc/cHX1T0y1/Aeropuerto1.png", "https://i.postimg.cc/zvvzc68C/Aeropuerto2.png", "https://i.postimg.cc/KzZvn4Ws/Aeropuerto3.png", "https://i.postimg.cc/fyPznCR6/Aeropuerto4.png",
           "https://i.postimg.cc/7YCP1FBD/Aeropuerto5.png", "https://i.postimg.cc/QNYxT8J0/Aeropuerto6.png", "https://i.postimg.cc/QxR8ffP7/Aeropuerto7.png"
@@ -256,8 +264,6 @@ export class ProjectsService {
       }
 
     })
-
-
 
     return filteredProjects;
 
