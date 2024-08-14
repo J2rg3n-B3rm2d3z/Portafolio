@@ -12,18 +12,13 @@ import { ProjectModalComponent } from '../project-modal/project-modal.component'
   styleUrl: './project-card.component.css'
 })
 export class ProjectCardComponent {
- 
-  @Input()  project = {} as Project;
+  @Input() project = {} as Project;
   bsModalRef?: BsModalRef;
-
-  constructor(private modalService: BsModalService){
-
+  constructor(private modalService: BsModalService) {
   }
 
-  OpenProjectModal(){
-
+  OpenProjectModal() {
     //Configuration for modal target.
-
     const modalOptions: ModalOptions = {
       class: "modal-lg",
       initialState: {
@@ -31,7 +26,7 @@ export class ProjectCardComponent {
       }
     };
 
-    this.bsModalRef =  this.modalService.show(ProjectModalComponent, modalOptions); //Instance for modal target.
+    this.bsModalRef = this.modalService.show(ProjectModalComponent, modalOptions); //Instance for modal target.
   }
 
 }

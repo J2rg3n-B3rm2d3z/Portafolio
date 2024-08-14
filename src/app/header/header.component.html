@@ -1,21 +1,13 @@
 <div class="jumbotron " style="position: relative;">
-
     <div class="text-center">
         <h1 class="display-4">Jurgen Bermúdez</h1>
         <h3>Ingeniero en computación Jr.</h3>
     </div>
-
     <div style="position: absolute; bottom: 5px; right: 10px;">
-        <a href="//www.linkedin.com/in/jurgen-francisco-b-376a95265" target="_blank">
-            <img src="../../assets/Linkedin.png" width="24" height="24" class="rounded-circle me-2">
+        <a *ngFor="let contact of contacts" [href]="contact.contactlink" target="_blank">
+            <img [src]="contact.pictures" [alt]="contact.name" width="24" height="24" class="rounded-circle me-2">
         </a>
-
-        <a href="//github.com/J2rg3n-B3rm2d3z" target="_blank">
-            <img src="../../assets/Github.jpeg" width="24" height="24" class="rounded-circle me-2">
-        </a>
-
     </div>
-
     <div style="position: absolute; bottom: 5px; left: 10px; font-size: 12px;">
         © Diseñado y programado por Jurgen Bermúdez.
     </div>
@@ -48,5 +40,4 @@
         <div class="bubble">
         </div>
     </div>
-
 </div>

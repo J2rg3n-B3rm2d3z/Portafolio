@@ -3,18 +3,18 @@
         <br>
         <h1>Contáctame</h1>
         <p>
-            Puedo ser contactado por el siguiente correo: <b>{{email}}</b> <br> <br> Sientete libre de contactarme por medio de las siguientes plataformas:
+            Puedo ser contactado por el siguiente correo: <b>{{email}}</b> <br> <br> Sientete libre de contactarme por
+            medio de las siguientes plataformas:
         </p>
         <br>
     </div>
     <div class="list-group shadow">
-        <a href="//www.linkedin.com/in/jurgen-francisco-b-376a95265" target="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3">
-            <img src="../../assets/Linkedin.png" width="32" height="32" class="rounded-circle flex-shrink-0 me-5">
-            <h3 class="mb-0">LinkedIn</h3>
-        </a>
-        <a href="//github.com/J2rg3n-B3rm2d3z" target="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3">
-            <img src="../../assets/Github.jpeg" width="32" height="32" class="rounded-circle flex-shrink-0 me-5">
-            <h3 class="mb-0">Github</h3>
-        </a>
+        <div *ngFor="let contact of contacts">
+            <a [href]="contact.contactlink" target="_blank" rel="noreferrer"
+                class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                <img [src]="contact.pictures" width="32" height="32" class="rounded-circle flex-shrink-0 me-5">
+                <h3 class="mb-0">{{contact.name}}</h3>
+            </a>
+        </div>
     </div>
 </div>

@@ -12,7 +12,6 @@ import { NgFor } from '@angular/common';
   styleUrl: './project-modal.component.css'
 })
 export class ProjectModalComponent {
-
   project = {} as Project;
 
   constructor(public bsModalRef: BsModalRef){

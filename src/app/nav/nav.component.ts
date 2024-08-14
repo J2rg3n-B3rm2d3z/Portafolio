@@ -10,7 +10,7 @@ import { NavbarService } from '../_services/navbar.service';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-
+  
   constructor(private navbarService: NavbarService){
   }
 

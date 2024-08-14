@@ -2,21 +2,22 @@
     <h2>{{project.name}}</h2>
     <button class="btn-close" (click)="bsModalRef.hide()"></button>
 </div>
-
 <div class="modal-body">
-        <carousel [isAnimated]="true">
-            <div *ngFor="let picture of project.pictures">
-                <slide><img src="{{picture}}" alt="slide" style="display: block; width:100%"></slide>
-            </div>
-        </carousel>
+    <carousel [isAnimated]="true">
+        <div *ngFor="let picture of project.pictures">
+            <slide><img src="{{picture}}" alt="slide" style="display: block; width:100%"></slide>
+        </div>
+    </carousel>
     <br>
     <h3 class="mt-2">Descripción</h3>
-    <p  style="text-align: justify;" class="m-3"> {{project.description}}</p>
+    <p style="text-align: justify;" class="m-3"> {{project.description}}</p>
     <p class="m-3"><b>Puedes encontrar este proyecto <a href="{{project.projectlink}}" target="_blank">aquí</a>.</b></p>
     <hr>
     <div class="d-flex flex-wrap ">
         <div *ngFor="let tag of project.tags">
-            <div class="tag me-2 mb-1" [style.background-color]="tag.color"><p><b> ◉ {{tag}} </b></p> </div>
+            <div class="tag me-2 mb-1" [style.background-color]="tag.color">
+                <p><b> ◉ {{tag}} </b></p>
+            </div>
         </div>
     </div>
 </div>

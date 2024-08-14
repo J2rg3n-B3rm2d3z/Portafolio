@@ -7,7 +7,6 @@ import { ProjectsService } from '../_services/projects.service';
 import { FormsModule } from '@angular/forms';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { Tag } from '../_models/Tag';
-import bootstrap from '../../main.server';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -161,7 +160,7 @@ export class PortfolioComponent implements OnInit {
     if (this.visualstudiocommunity) {
       filterTags.push(Tag.VISUALSTUDIO)
     }
-    if(this.spyder){
+    if (this.spyder) {
       filterTags.push(Tag.SPIDER)
     }
 
@@ -232,7 +231,7 @@ export class PortfolioComponent implements OnInit {
     if (this.virtualbox) {
       filterTags.push(Tag.VIRTUALBOX)
     }
-    if(this.vmware){
+    if (this.vmware) {
       filterTags.push(Tag.VMWAREWORKSTATION)
     }
     if (this.googlecolab) {
