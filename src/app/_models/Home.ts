@@ -1,4 +1,5 @@
 export interface Homeinf {
+    id: number;
     resume: string;
     img: string;
     featureproject: number;

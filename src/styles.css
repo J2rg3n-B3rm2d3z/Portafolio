@@ -3,192 +3,222 @@
 /* Background page animation.*/
 
 body {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgba(120, 170, 240,0.75) 3%, rgba(147, 120, 240,0.75) 38%, rgba(120, 131, 240,0.75) 68%, rgba(120, 208, 240,0.75) 98%, rgba(186, 120, 240,0.75) 100%);
-    animation: gradient 10s ease infinite;
-    background-size: 300% 300%;
-    background-attachment: fixed;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    rgba(120, 170, 240, 0.75) 3%,
+    rgba(147, 120, 240, 0.75) 38%,
+    rgba(120, 131, 240, 0.75) 68%,
+    rgba(120, 208, 240, 0.75) 98%,
+    rgba(186, 120, 240, 0.75) 100%
+  );
+  animation: gradient 10s ease infinite;
+  background-size: 300% 300%;
+  background-attachment: fixed;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 /*Global settings.*/
 
-.container{
-    max-width: 1140px;
+.container {
+  max-width: 1140px;
 }
 
-.tag{
-    padding: 0 20px;
-    height: 30px;
-    width: fit-content;
-    font-size: 14px;
-    line-height: 30px;
-    border-radius: 150px;
-    background-color: rgba(230, 229, 235, 0.75);
-    color: white;
+.tag {
+  padding: 0 20px;
+  height: 30px;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 150px;
+  background-color: rgba(230, 229, 235, 0.75);
+  color: white;
 }
 
 /*Animation.*/
 
+/*Loading Animation*/
+
+.loaderlight {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loaderdark {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #252323;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*Right Animation for the body.*/
 
 @keyframes enterR {
-	from {
-		opacity: 0;
-		transform: translateX(100%);
-	}
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes exitR {
-	from {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
 
-    to {
-		opacity: 0;
-		transform: translateX(-100%);
-	}
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 
-::view-transition-old(slide-right){
-    animation-duration: 1s;
-	animation-name: exitR;
+::view-transition-old(slide-right) {
+  animation-duration: 1s;
+  animation-name: exitR;
 }
 
-::view-transition-new(slide-right){
-    animation-duration: 1s;
-	animation-name: enterR;
+::view-transition-new(slide-right) {
+  animation-duration: 1s;
+  animation-name: enterR;
 }
 
 /*Left Animation for the body.*/
 
 @keyframes enterL {
-	from {
-		opacity: 0;
-		transform: translateX(-100%);
-	}
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes exitL {
-	from {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
 
-    to {
-		opacity: 0;
-		transform: translateX(100%);
-	}
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 }
 
-::view-transition-old(slide-left){
-    animation-duration: 1s;
-	animation-name: exitL;
+::view-transition-old(slide-left) {
+  animation-duration: 1s;
+  animation-name: exitL;
 }
 
-::view-transition-new(slide-left){
-    animation-duration: 1s;
-	animation-name: enterL;
+::view-transition-new(slide-left) {
+  animation-duration: 1s;
+  animation-name: enterL;
 }
-
 
 /*Animation for slide-up.*/
 
-
 @keyframes enterPU {
-	from {
-		opacity: 0;
-		transform: translateY(100%);
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-
-	}
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes exitPU {
-	from {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-    to {
-		opacity: 0;
-		transform: translateY(100%);
-	}
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 }
 
-
-::view-transition-old(slide-up){
-    animation-duration: 1s;
-	animation-name: exitPU;
+::view-transition-old(slide-up) {
+  animation-duration: 1s;
+  animation-name: exitPU;
 }
 
-::view-transition-new(slide-up){
-    animation-duration: 1s;
-	animation-name: enterPU;
+::view-transition-new(slide-up) {
+  animation-duration: 1s;
+  animation-name: enterPU;
 }
 
 /*Animation for the root.*/
 
 @keyframes enterP {
-	from {
-		opacity: 0;
+  from {
+    opacity: 0;
+  }
 
-	}
-
-	to {
-		opacity: 1;
-
-	}
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes exitP {
-	from {
-		opacity: 1;
+  from {
+    opacity: 1;
+  }
 
-	}
-
-    to {
-		opacity: 0;
-
-	}
+  to {
+    opacity: 0;
+  }
 }
 
-
-::view-transition-old(root){
-    animation-duration: 0.01s;
-	animation-name: exitP;
+::view-transition-old(root) {
+  animation-duration: 0.01s;
+  animation-name: exitP;
 }
 
-::view-transition-new(root){
-    animation-duration: 0.01s;
-	animation-name: enterP;
+::view-transition-new(root) {
+  animation-duration: 0.01s;
+  animation-name: enterP;
 }

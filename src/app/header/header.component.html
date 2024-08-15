@@ -3,10 +3,16 @@
         <h1 class="display-4">Jurgen Bermúdez</h1>
         <h3>Ingeniero en computación Jr.</h3>
     </div>
+
     <div style="position: absolute; bottom: 5px; right: 10px;">
-        <a *ngFor="let contact of contacts" [href]="contact.contactlink" target="_blank">
-            <img [src]="contact.pictures" [alt]="contact.name" width="24" height="24" class="rounded-circle me-2">
-        </a>
+        <div *ngIf="isLoading" class="text-center">
+            <span class="loaderlight rounded-circle me-2" width="24" height="24"></span>
+        </div>
+        <div *ngIf="!isLoading">
+            <a *ngFor="let contact of contacts" [href]="contact.contactlink" target="_blank">
+                <img [src]="contact.picture" [alt]="contact.name" width="24" height="24" class="rounded-circle me-2">
+            </a>
+        </div>
     </div>
     <div style="position: absolute; bottom: 5px; left: 10px; font-size: 12px;">
         © Diseñado y programado por Jurgen Bermúdez.

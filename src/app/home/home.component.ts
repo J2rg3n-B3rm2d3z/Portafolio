@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { ProjectsService } from '../_services/projects.service';
 import { Project } from '../_models/Project';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { CommonModule, NgFor } from '@angular/common';
+import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { Homeinf, Lenguage } from '../_models/Home';
 import { HomeinfService } from '../_services/homeinf.service';
@@ -11,11 +11,12 @@ import { HomeinfService } from '../_services/homeinf.service';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselModule, NgFor, RouterLink, RouterLinkActive, CommonModule],
+  imports: [CarouselModule, NgFor, RouterLink, RouterLinkActive, CommonModule, NgIf],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
+  isLoading = false;
   homeinf = {} as Homeinf;
   hoveredItem: (string | null) = null;
   featuredProject = {} as Project;
@@ -26,8 +27,18 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.homeinf = this.homeinfService.GetHomeinf();
-    this.featuredProject = this.projectService.GetProjectById(this.homeinf.featureproject); //Put the Id from the featured project
+    this.isLoading = true;
+    this.homeinfService.GetHomeinf().subscribe(
+      inf => {
+        this.homeinf = inf[0];
+        this.featuredProject = this.projectService.GetProjectById(this.homeinf.featureproject);
+        this.isLoading = false;
+      }, error => {
+        console.error('Error al cargar los datos', error);
+        this.isLoading = true;
+      }
+    )
+     //Put the Id from the featured project
   }
 
   //Code to download the resume

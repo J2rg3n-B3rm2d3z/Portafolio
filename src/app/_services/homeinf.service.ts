@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Homeinf, Lenguage } from '../_models/Home';
+import { collection, collectionData, Firestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +9,7 @@ import { Homeinf, Lenguage } from '../_models/Home';
 export class HomeinfService {
 
   private homeinf = {
+    id: 0,
     resume: 'Ingeniero en computación Jr, con una gran pasión por el aprendizaje y desarrollo de nuevas tecnologías, con sed de autosuperación tanto a nivel profesional como personal.',
     img: '../../assets/default.jpg',
     featureproject: 0,
@@ -27,10 +30,12 @@ export class HomeinfService {
     ] as Lenguage[]
   } as Homeinf;
 
-  constructor() { }
+  constructor(private firestore: Firestore) { }
 
-  GetHomeinf(): Homeinf {
-    return this.homeinf;
+  GetHomeinf() : Observable<Homeinf[]> {
+    const homeinf = collection(this.firestore, 'Homeinf');
+
+    return collectionData(homeinf, { idField: 'id' }) as Observable<Homeinf[]>;
   }
 
 }

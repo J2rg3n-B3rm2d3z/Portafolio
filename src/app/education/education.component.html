@@ -1,28 +1,42 @@
 <div class="container">
-    <div *ngFor="let phase of phases">
+    <div *ngIf="isLoading" class="text-center mt-5">
         <div class="text-center border mb-5 shadow rounded" style="background-color: white;">
             <br>
-            <h1>{{phase.phase}}</h1>
-            <div *ngFor="let education of phase.education">
-                <div class="row shadow-sm border m-3 m-sm-5">
-                    <div class="col-lg  text-center">
-                        <h5 class="m-3">
-                            {{education.header}}
-                        </h5>
-                        <p style="text-align: justify; hyphens: auto; padding: 2%;">
-                            {{education.body}}
-                        </p>
-                    </div>
-                    <div class="col-lg ">
-                        <div class="imagen-16-9">
-                            <a [href]="education.imagelink" target="_blank" rel="noreferrer">
-                                <img [src]="education.imageresource" [alt]="education.alt" class="shadow-sm border">
-                            </a>
+            <h1>Cargando</h1>
+            <br>
+            <br>
+                <span class="loaderdark"></span>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div *ngIf="!isLoading">
+        <div *ngFor="let phase of phases">
+            <div class="text-center border mb-5 shadow rounded" style="background-color: white;">
+                <br>
+                <h1>{{phase.phase}}</h1>
+                <div *ngFor="let education of phase.education">
+                    <div class="row shadow-sm border m-3 m-sm-5">
+                        <div class="col-lg  text-center">
+                            <h5 class="m-3">
+                                {{education.header}}
+                            </h5>
+                            <p style="text-align: justify; hyphens: auto; padding: 2%;">
+                                {{education.body}}
+                            </p>
+                        </div>
+                        <div class="col-lg ">
+                            <div class="imagen-16-9">
+                                <a [href]="education.imagelink" target="_blank" rel="noreferrer">
+                                    <img [src]="education.imageresource" [alt]="education.alt" class="shadow-sm border">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <br>
             </div>
-            <br>
         </div>
     </div>
 </div>

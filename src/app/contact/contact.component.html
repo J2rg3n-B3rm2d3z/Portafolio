@@ -8,13 +8,18 @@
         </p>
         <br>
     </div>
-    <div class="list-group shadow">
-        <div *ngFor="let contact of contacts">
-            <a [href]="contact.contactlink" target="_blank" rel="noreferrer"
-                class="list-group-item list-group-item-action d-flex gap-3 py-3">
-                <img [src]="contact.pictures" width="32" height="32" class="rounded-circle flex-shrink-0 me-5">
-                <h3 class="mb-0">{{contact.name}}</h3>
-            </a>
+    <div *ngIf="isLoading" class="text-center">
+        <span class="loaderlight"></span>
+    </div>
+    <div *ngIf="!isLoading">
+        <div class="list-group shadow">
+            <div *ngFor="let contact of contacts">
+                <a [href]="contact.contactlink" target="_blank" rel="noreferrer"
+                    class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                    <img [src]="contact.picture" width="32" height="32" class="rounded-circle flex-shrink-0 me-5">
+                    <h3 class="mb-0">{{contact.name}}</h3>
+                </a>
+            </div>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 export interface Contact {
     id: number;
     contactlink: string;
-    pictures: string;
+    picture: string;
     name: string;
 }

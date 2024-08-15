@@ -9,11 +9,19 @@
                 <br>
                 <h2>Acerca de mí</h2>
                 <br>
-                <img [src]="homeinf.img" alt="Imagen de perfil" width="256" height="256" class="rounded-circle">
-                <p style="text-align: justify; hyphens: auto; padding: 2%;">
+                <div *ngIf="isLoading" class="text-center mt-5 mb-5">
+                    <span class="loaderdark"></span>
                     <br>
-                    {{homeinf.resume}}
-                </p>
+                    <br>
+                    <br>
+                </div>
+                <div *ngIf="!isLoading">
+                    <img [src]="homeinf.img" alt="Imagen de perfil" width="256" height="256" class="rounded-circle">
+                    <p style="text-align: justify; hyphens: auto; padding: 2%;">
+                        <br>
+                        {{homeinf.resume}}
+                    </p>
+                </div>
             </div>
         </div>
         <div class="col-lg shadow border m-1 rounded" style="background-color: white;">
@@ -23,16 +31,26 @@
                     Proyecto destacado
                 </h2>
                 <br>
-                <h4> {{featuredProject.name}} </h4>
-                <br>
-            </div>
-            <carousel [isAnimated]="true">
-                <div *ngFor="let picture of featuredProject.pictures">
-                    <slide><img src="{{picture}}" alt="slide" style="display: block; width:100%"></slide>
+                <div *ngIf="isLoading" class="text-center mt-5 mb-5">
+                    <span class="loaderdark"></span>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-            </carousel>
-            <p class="mt-2" style="text-align: center; hyphens: auto; padding: 1%;">{{featuredProject.summary}}</p>
-            <p> Visita la sección de portafolio para saber más.</p>
+                <div *ngIf="!isLoading">
+                    <h4> {{featuredProject.name}} </h4>
+                    <br>
+                </div>
+            </div>
+            <div *ngIf="!isLoading">
+                <carousel [isAnimated]="true">
+                    <div *ngFor="let picture of featuredProject.pictures">
+                        <slide><img src="{{picture}}" alt="slide" style="display: block; width:100%"></slide>
+                    </div>
+                </carousel>
+                <p class="mt-2" style="text-align: center; hyphens: auto; padding: 1%;">{{featuredProject.summary}}</p>
+                <p> Visita la sección de <b>portafolio</b> para saber más.</p>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -41,13 +59,20 @@
             <div class="text-center">
                 <br>
                 <h2>Habilidades</h2>
-                <ul class="list-group text-start m-1" style="hyphens: auto; padding: 3%;  flex-grow: 1;">
-                    <li *ngFor="let hability of homeinf.habilities" class="list-group-item shadow-sm"
-                        [ngClass]="{'grassetto': hability === hoveredItem}" (mouseenter)="hoveredItem = hability"
-                        (mouseleave)="hoveredItem = null">
-                        ➤ &nbsp;&nbsp;&nbsp;{{ hability }}
-                    </li>
-                </ul>
+                <div *ngIf="isLoading" class="text-center mt-5 mb-5">
+                    <br>
+                    <span class="loaderdark"></span>
+                    <br>
+                </div>
+                <div *ngIf="!isLoading">
+                    <ul class="list-group text-start m-1" style="hyphens: auto; padding: 3%;  flex-grow: 1;">
+                        <li *ngFor="let hability of homeinf.habilities" class="list-group-item shadow-sm"
+                            [ngClass]="{'grassetto': hability === hoveredItem}" (mouseenter)="hoveredItem = hability"
+                            (mouseleave)="hoveredItem = null">
+                            ➤ &nbsp;&nbsp;&nbsp;{{ hability }}
+                        </li>
+                    </ul>
+                </div>
             </div>
             <br>
         </div>
@@ -55,23 +80,30 @@
             <div class="text-center">
                 <br>
                 <h2>Idiomas</h2>
-                <div class="row m-4">
-                    <div *ngFor="let lenguage of homeinf.lenguages" class="col shadow-sm border m-1">
-                        <br>
-                        <img [src]="lenguage.img" [alt]="lenguage.name" width="100" height="100"
-                            class="rounded-circle shadow border m-1">
-                        <br>
-                        <br>
-                        <h5>
-                            <b>{{lenguage.name}}</b>
-                        </h5>
-                        <br>
-                        <ul class="text-start m-1">
-                            <li *ngFor="let item of lenguage.habilities">
-                                {{ item }}
-                            </li>
-                        </ul>
-                        <br>
+                <div *ngIf="isLoading" class="text-center mt-5 mb-5">
+                    <br>
+                    <span class="loaderdark"></span>
+                    <br>
+                </div>
+                <div *ngIf="!isLoading">
+                    <div class="row m-4">
+                        <div *ngFor="let lenguage of homeinf.lenguages" class="col shadow-sm border m-1">
+                            <br>
+                            <img [src]="lenguage.img" [alt]="lenguage.name" width="100" height="100"
+                                class="rounded-circle shadow border m-1">
+                            <br>
+                            <br>
+                            <h5>
+                                <b>{{lenguage.name}}</b>
+                            </h5>
+                            <br>
+                            <ul class="text-start m-1">
+                                <li *ngFor="let item of lenguage.habilities">
+                                    {{ item }}
+                                </li>
+                            </ul>
+                            <br>
+                        </div>
                     </div>
                 </div>
                 <br>

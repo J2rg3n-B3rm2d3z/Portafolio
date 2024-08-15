@@ -1,6 +1,13 @@
 //This class is for tags of tecnology that use in projects.
 //If this change (add o delete tags) you shuold edit the portfolio component.
 
+// export interface Tag{
+//     id: number;
+//     key: string;
+//     color: string;
+// }
+
+
 export class Tag {
     static readonly ANGULAR = new Tag('Angular', 'darkred');
     static readonly TYPESCRIPT = new Tag('TypeScript', 'teal');

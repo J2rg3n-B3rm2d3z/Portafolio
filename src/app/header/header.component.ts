@@ -1,23 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 import { Contact } from '../_models/Contact';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { ContactsService } from '../_services/contacts.service';
+import { error } from 'console';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
   contacts = {} as Contact[]
+  isLoading = false;
 
   constructor(private contactsService: ContactsService){
   }
 
   ngOnInit(): void {
-    this.contacts = this.contactsService.GetContacts();
+    this.isLoading = true;
+    this.contactsService.GetContacts().subscribe(
+      contacts => {
+        this.contacts = contacts;
+        this.isLoading = false;
+      },
+      error => {
+        console.error('Error al cargar los datos', error);
+        this.isLoading = true;
+      }
+    )
   }
 
 }

@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Contact } from '../_models/Contact';
+import { Tag } from '../_models/Tag';
 import { collection, collectionData, Firestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ContactsService {
+export class TagService {
 
   constructor(private firestore: Firestore) { }
 
-  GetContacts(): Observable<Contact[]>  {
-    const contacts = collection(this.firestore, 'Contacts');
+  GetTags():  Observable<Tag[]> {
+    const tags = collection(this.firestore, 'Tags');
     
-    return collectionData(contacts,{idField:'id'}) as Observable<Contact[]>;
+    return collectionData(tags,{idField:'id'}) as Observable<Tag[]>;
+    
   }
 }

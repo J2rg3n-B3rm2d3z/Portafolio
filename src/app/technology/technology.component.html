@@ -1,37 +1,51 @@
 <div class="container text-center">
-    <div class="row mt-4" *ngFor="let typetec of typetecs">
-        <div class="col-lg shadow border m-1 rounded" style="background-color: white;">
-            <div class="text-center">
-                <br>
-                <h2>
-                    {{typetec.type1}}
-                </h2>
-                <br>
-                <p>
-                    <a *ngFor="let section of typetec.section1" [href]="section.imagelink" target="_blank"
-                        rel="noreferrer" class="ms-3">
-                        <img [src]="section.imageresource" [alt]="section.alt" width="50" height="50" />
-                    </a>
-                </p>
-            </div>
+    <div *ngIf="isLoading" class="mt-5">
+        <div class="text-center border mb-5 shadow rounded" style="background-color: white;">
+            <br>
+            <h1>Cargando</h1>
+            <br>
+            <br>
+            <span class="loaderdark"></span>
+            <br>
+            <br>
             <br>
         </div>
-        <br>
-        <div class="col-lg shadow border m-1 rounded" style="background-color: white;">
-            <div class="text-center">
+    </div>
+    <div *ngIf="!isLoading">
+        <div class="row mt-4" *ngFor="let typetec of typetecs">
+            <div class="col-lg shadow border m-1 rounded" style="background-color: white;">
+                <div class="text-center">
+                    <br>
+                    <h2>
+                        {{typetec.type1}}
+                    </h2>
+                    <br>
+                    <p>
+                        <a *ngFor="let section of typetec.section1" [href]="section.imagelink" target="_blank"
+                            rel="noreferrer" class="ms-3">
+                            <img [src]="section.imageresource" [alt]="section.alt" width="50" height="50" />
+                        </a>
+                    </p>
+                </div>
                 <br>
-                <h2>
-                    {{typetec.type2}}
-                </h2>
-                <br>
-                <p>
-                    <a *ngFor="let section of typetec.section2" [href]="section.imagelink" target="_blank"
-                        rel="noreferrer" class="ms-3">
-                        <img [src]="section.imageresource" [alt]="section.alt" width="50" height="50" />
-                    </a>
-                </p>
             </div>
             <br>
+            <div class="col-lg shadow border m-1 rounded" style="background-color: white;">
+                <div class="text-center">
+                    <br>
+                    <h2>
+                        {{typetec.type2}}
+                    </h2>
+                    <br>
+                    <p>
+                        <a *ngFor="let section of typetec.section2" [href]="section.imagelink" target="_blank"
+                            rel="noreferrer" class="ms-3">
+                            <img [src]="section.imageresource" [alt]="section.alt" width="50" height="50" />
+                        </a>
+                    </p>
+                </div>
+                <br>
+            </div>
         </div>
     </div>
     <br>
