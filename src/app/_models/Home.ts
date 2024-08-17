@@ -1,3 +1,4 @@
+//information interface to home
 export interface Homeinf {
     id: number;
     resume: string;
@@ -6,7 +7,7 @@ export interface Homeinf {
     habilities: string[];
     lenguages: Lenguage[];
 }
-
+//information interface to Lenguage
 export interface Lenguage {
     id: number;
     name: string;

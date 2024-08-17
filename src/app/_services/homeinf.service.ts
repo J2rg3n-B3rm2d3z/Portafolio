@@ -32,7 +32,7 @@ export class HomeinfService {
 
   constructor(private firestore: Firestore) { }
 
-  GetHomeinf() : Observable<Homeinf[]> {
+  GetHomeinf() : Observable<Homeinf[]> { //Get all information Home.
     const homeinf = collection(this.firestore, 'Homeinf');
 
     return collectionData(homeinf, { idField: 'id' }) as Observable<Homeinf[]>;

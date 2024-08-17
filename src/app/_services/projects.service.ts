@@ -1,8 +1,8 @@
-import { Injectable, Type } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Project } from '../_models/Project';
 import { Tag } from '../_models/Tag';
-import { collection, collectionData, doc, Firestore, query, where } from '@angular/fire/firestore';
-import { catchError, map, Observable, switchMap, throwError } from 'rxjs';
+import { collection, collectionData, Firestore, query, where } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,44 +15,27 @@ export class ProjectsService {
   constructor(private firestore: Firestore) {
   }
 
-  GetProjects(): Observable<Project[]> {
+  GetProjects(): Observable<Project[]> { //Get all the projects
     const projects = collection(this.firestore, 'Projects');
 
     return collectionData(projects, { idField: 'id' }) as Observable<Project[]>;
   }
 
-  GetProjectById(id: number = 0): Observable<Project[]> {
+  GetProjectById(id: number = 0): Observable<Project[]> { //Get the projects by id
     const project = collection(this.firestore, 'Projects');
     const q = query(project, where('id', '==', id));
     return collectionData(q, { idField: 'id' }) as Observable<Project[]>;
   }
 
-  GetProjectByFilter(filterTags: Tag[]): Observable<Project[]> {
+  GetProjectByFilter(filterTags: Tag[]): Observable<Project[]> { //Get the projects by tags
     const projects = collection(this.firestore, 'Projects');
-    const q = query(projects, where('tagKey', 'array-contains-any', filterTags.map(tag => tag.key)));
+
+    let q = query(projects);
+
+    filterTags.forEach(tag => {
+      q = query(q, where('tagKey', 'array-contains', tag.key));
+    });
+    
     return collectionData(q, { idField: 'id' }) as Observable<Project[]>;
   }
-
-  // GetProjectByFilter(filterTags: Tag[]): Project[] {
-  //   const filteredProjects: Project[] = []; //Empty Projects
-
-  //   this.projects.forEach(function (project) { //Call a anonymous function for each project.
-  //     let foundAll = true;
-
-  //     filterTags.forEach(function (filterTag) { //Call a anonymous function for each tag.
-  //       if (project.tags.includes(filterTag) == false) { //If tag is no found in the project, change the state to false.
-  //         foundAll = false;
-  //       }
-  //     })
-
-  //     if (foundAll) { //If state true push to de filtered projects.
-  //       filteredProjects.push(project);
-  //     }
-
-  //   })
-
-  //   return filteredProjects;
-  // }
-
-
 }

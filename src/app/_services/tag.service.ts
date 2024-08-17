@@ -10,7 +10,7 @@ export class TagService {
 
   constructor(private firestore: Firestore) { }
 
-  GetTags():  Observable<Tag[]> {
+  GetTags():  Observable<Tag[]> { //Get al the tags
     const tags = collection(this.firestore, 'Tags');
     
     return collectionData(tags,{idField:'id'}) as Observable<Tag[]>;

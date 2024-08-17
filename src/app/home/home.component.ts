@@ -5,7 +5,7 @@ import { Project } from '../_models/Project';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { Homeinf, Lenguage } from '../_models/Home';
+import { Homeinf } from '../_models/Home';
 import { HomeinfService } from '../_services/homeinf.service';
 
 @Component({
@@ -43,7 +43,6 @@ export class HomeComponent implements OnInit {
         this.isLoading = true;
       }
     )
-    //Put the Id from the featured project
   }
 
   //Code to download the resume

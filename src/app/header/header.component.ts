@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Contact } from '../_models/Contact';
 import { NgFor, NgIf } from '@angular/common';
 import { ContactsService } from '../_services/contacts.service';
-import { error } from 'console';
 
 @Component({
   selector: 'app-header',

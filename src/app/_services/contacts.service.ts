@@ -10,7 +10,7 @@ export class ContactsService {
 
   constructor(private firestore: Firestore) { }
 
-  GetContacts(): Observable<Contact[]>  {
+  GetContacts(): Observable<Contact[]>  { //Get all the contacts
     const contacts = collection(this.firestore, 'Contacts');
     
     return collectionData(contacts,{idField:'id'}) as Observable<Contact[]>;

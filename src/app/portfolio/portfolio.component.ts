@@ -17,7 +17,7 @@ import { TagService } from '../_services/tag.service';
 })
 export class PortfolioComponent implements OnInit {
 
-  projects = {} as Project[];
+  projects = {} as Project[] | null;
   tags = {} as Tag[];
 
   isLoading: boolean = false;
@@ -32,10 +32,10 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
 
     this.isLoading = true;
-
+    //Get tags and Tags html
     this.tagService.GetTags().subscribe(
       tags => {
-        
+
         this.tags = tags;
 
         this.tags.forEach(element => {
@@ -55,6 +55,7 @@ export class PortfolioComponent implements OnInit {
           return acc;
         }, [] as TagHtml[]);
 
+        //Gets projects
         this.projectService.GetProjects().subscribe(projects => {
 
           this.projects = projects;
@@ -68,6 +69,8 @@ export class PortfolioComponent implements OnInit {
       }
     )
   }
+
+  //Filter the projects
 
   Filter() {
     let filterTags: Tag[] = [];
@@ -96,7 +99,6 @@ export class PortfolioComponent implements OnInit {
         this.projectService.GetProjects().subscribe(projects => {
           this.projects = projects;
           this.projects = this.OrganizeProjects(this.projects, this.tags);
-          this.isCollapse = true;
         })
       }
     }
@@ -122,7 +124,7 @@ export class PortfolioComponent implements OnInit {
     }
   }
 
-  private OrganizeProjects(projects: Project[], tags: Tag[]): Project[] {
+  private OrganizeProjects(projects: Project[], tags: Tag[]): Project[] { //Organize projects
     projects.sort((a, b) => { return a.id - b.id });
     projects.forEach(project => {
       project.tags = tags.filter(tag => project.tagKey.includes(tag.key))

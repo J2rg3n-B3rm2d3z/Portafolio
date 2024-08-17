@@ -10,7 +10,7 @@ export class EducationService {
 
   constructor(private firestore: Firestore) { }
 
-  GetPhase_education(): Observable<Phase_education[]> {
+  GetPhase_education(): Observable<Phase_education[]> { //Get all education info
     const phase_education = collection(this.firestore, 'Education');
 
     return collectionData(phase_education, { idField: 'id' }) as Observable<Phase_education[]>;

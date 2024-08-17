@@ -1,3 +1,4 @@
+//this is a interface for tags, and tags in html.
 export interface Tag{
     id: number;
     key: string;

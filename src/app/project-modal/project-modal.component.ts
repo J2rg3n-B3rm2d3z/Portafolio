@@ -14,7 +14,7 @@ import { NgFor } from '@angular/common';
 export class ProjectModalComponent {
   project = {} as Project;
 
-  constructor(public bsModalRef: BsModalRef){
+  constructor(public bsModalRef: BsModalRef) {
   }
-  
+
 }

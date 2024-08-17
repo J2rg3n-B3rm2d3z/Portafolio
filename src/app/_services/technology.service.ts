@@ -10,7 +10,7 @@ export class TechnologyService {
 
   constructor(private firestore: Firestore) { }
 
-  GetTechnology():  Observable<TypeTec[]> {
+  GetTechnology():  Observable<TypeTec[]> { //Get all technology
     const contacts = collection(this.firestore, 'Typetecs');
     
     return collectionData(contacts,{idField:'id'}) as Observable<TypeTec[]>;
