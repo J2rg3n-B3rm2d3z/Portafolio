@@ -31,14 +31,19 @@ export class HomeComponent implements OnInit {
     this.homeinfService.GetHomeinf().subscribe(
       inf => {
         this.homeinf = inf[0];
-        this.featuredProject = this.projectService.GetProjectById(this.homeinf.featureproject);
-        this.isLoading = false;
+        this.projectService.GetProjectById(this.homeinf.featureproject).subscribe(project => {
+          this.featuredProject = project[0];
+          this.isLoading = false;
+        }, error => {
+          console.error('Error al cargar los datos', error);
+          this.isLoading = true;
+        })
       }, error => {
         console.error('Error al cargar los datos', error);
         this.isLoading = true;
       }
     )
-     //Put the Id from the featured project
+    //Put the Id from the featured project
   }
 
   //Code to download the resume

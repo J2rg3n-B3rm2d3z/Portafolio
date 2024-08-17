@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Tag } from '../_models/Tag';
-import { collection, collectionData, Firestore } from '@angular/fire/firestore';
+import { collection, collectionData, Firestore} from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -14,6 +14,5 @@ export class TagService {
     const tags = collection(this.firestore, 'Tags');
     
     return collectionData(tags,{idField:'id'}) as Observable<Tag[]>;
-    
   }
 }

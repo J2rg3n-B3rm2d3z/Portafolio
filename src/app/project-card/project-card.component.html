@@ -8,15 +8,15 @@
         </p>
         <div class="d-flex justify-content-end">
             <button class="btn btn-primary " (click)="OpenProjectModal()">
-                Ver más
+            <b>Ver más</b>
             </button>
         </div>
     </div>
     <div class="card-footer">
         <div class="d-flex flex-wrap justify-content-center">
             <div *ngFor="let tag of project.tags">
-                <div class="tag me-2 mb-1" [style.background-color]="tag.color">
-                    <p><b> ◉ {{tag}} </b></p>
+                <div class="tag me-2 mb-1 shadow-sm" [style.background-color]="tag.color">
+                    <p><b> ◉ {{tag.key}} </b></p>
                 </div>
             </div>
         </div>

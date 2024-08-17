@@ -9,5 +9,6 @@ export interface Project {
     description: string;
     projectlink: string;
     pictures: string[];
+    tagKey: string[];
     tags: Tag[];
 }
