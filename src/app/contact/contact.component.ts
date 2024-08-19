@@ -25,6 +25,7 @@ export class ContactComponent implements OnInit {
     this.contactsService.GetContacts().subscribe(
       contacts => {
         this.contacts = contacts;
+        this.contacts.sort((a, b) => { return a.id - b.id });
         this.isLoading = false;
       },
       error => {

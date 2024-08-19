@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
     this.homeinfService.GetHomeinf().subscribe(
       inf => {
         this.homeinf = inf[0];
+        this.homeinf.lenguages.sort((a, b) => { return a.id - b.id });
         this.projectService.GetProjectById(this.homeinf.featureproject).subscribe(project => {
           this.featuredProject = project[0];
           this.isLoading = false;

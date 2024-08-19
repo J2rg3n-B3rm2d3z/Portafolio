@@ -24,6 +24,7 @@ export class TechnologyComponent implements OnInit {
     this.technologyService.GetTechnology().subscribe(
       tech => {
         this.typetecs = tech;
+        this.typetecs.sort((a, b) => { return a.id - b.id });
         this.isLoading = false;
       },
       error => {

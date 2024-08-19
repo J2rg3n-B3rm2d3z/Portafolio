@@ -24,6 +24,10 @@ export class EducationComponent implements OnInit {
     this.educationService.GetPhase_education().subscribe(
       phases => {
         this.phases = phases;
+        this.phases.sort((a, b) => { return a.id - b.id });
+        this.phases.forEach(element => {
+          element.education.sort((a, b) => { return a.id - b.id });
+        });
         this.isLoading = false;
       },
       error => {
