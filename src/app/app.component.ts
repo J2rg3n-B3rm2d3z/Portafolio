@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterOutlet, Router } from '@angular/router';
+import { RouterOutlet, Router } from '@angular/router';
 import { HeaderComponent } from "./header/header.component";
 import { NavComponent } from "./nav/nav.component";
 import { NavbarService } from './_services/navbar.service';
@@ -11,8 +11,7 @@ import { NavbarService } from './_services/navbar.service';
     CommonModule,
     RouterOutlet,
     HeaderComponent,
-    NavComponent,
-    RouterLink,
+    NavComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
