@@ -6,6 +6,7 @@ export interface Homeinf {
     featureproject: number;
     habilities: string[];
     lenguages: Lenguage[];
+    curriculum: string;
 }
 //information interface to Lenguage
 export interface Lenguage {
