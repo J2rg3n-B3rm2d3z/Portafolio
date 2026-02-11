@@ -14,7 +14,7 @@ import { ContactsService } from '../_services/contacts.service';
 export class ContactComponent implements OnInit {
   isLoading = false;
   contacts = {} as Contact[];
-  email: string = 'jurgenfbermudezpicado@gmail.com'
+  email: string = 'jurgenb.contacto@gmail.com'
 
   constructor(private tittleService: Title, private contactsService: ContactsService) {
     this.tittleService.setTitle('Jurgen Bermúdez - Contactos');
